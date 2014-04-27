@@ -17,12 +17,20 @@ class RubyneatDashboard < Sinatra::Base
 
     # The second parameter defines where the compressed version will be served.
     # (Note: that parameter is optional, AssetPack will figure it out.)
-    js :app, '/js/app.js', [
+    js :app, '/js/app.js',
+       [
+        '/js/jquery-2.1.0.js',
+        '/js/angular.js',
+        '/js/foundation.min.js',
+        '/js/foundation/*.js',
         '/js/vendor/**/*.js',
-        '/js/lib/**/*.js'
+        '/js/lib/**/*.js',
+        '/js/dashboard.js'
     ]
 
     css :application, '/css/application.css', [
+        '/css/foundation.css',
+        '/css/normalize.css',
         '/css/screen.css'
     ]
 
@@ -35,7 +43,7 @@ class RubyneatDashboard < Sinatra::Base
     set static: true
   end
 
-  get '/?' do
+  get '/' do
     haml :index
   end
 end
