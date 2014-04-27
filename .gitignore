@@ -12,6 +12,9 @@ doc
 # bundler
 .bundle
 
+#Rubymine
+.idea/
+
 # jeweler generated
 pkg
 
@@ -47,3 +50,4 @@ pkg
 
 # For rubinius:
 #*.rbc
+
