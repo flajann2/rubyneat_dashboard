@@ -25,13 +25,16 @@ class RubyneatDashboard < Sinatra::Base
         '/js/foundation/*.js',
         '/js/vendor/**/*.js',
         '/js/lib/**/*.js',
-        '/js/dashboard.js'
+        '/js/dashboard.js',
+        '/js/dashboard/*.js'
     ]
 
     css :application, '/css/application.css', [
         '/css/foundation.css',
         '/css/normalize.css',
-        '/css/screen.css'
+        '/css/vendor/*.css',
+        '/css/dashboard.css',
+        '/css/dashboard/*.css'
     ]
 
     js_compression  :jsmin    # :jsmin | :yui | :closure | :uglify
