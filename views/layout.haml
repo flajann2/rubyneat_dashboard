@@ -12,5 +12,26 @@
         Dashboard
       .headlines
         Name of Neater Proj
-    Hello Haml Layout
+    %nav.top-bar
+      %ul.title-area
+        %li.name
+          %h1
+            %a(href='#') My Site
+        %li.toggle-topbar.menu-icon
+          %a(href='#')
+            %span Menu
+      %section.top-bar-section
+        %ul.right
+          %li.active
+            %a(href='#') Right Button Active
+          %li.has-dropdown
+            %a(href='#') Right Button Dropdown
+            %ul.dropdown
+              %li
+                %a(href='#') First link in dropdown
+        %ul.left
+          %li
+            %a(href='#') Left Nav Button
+
+
 

@@ -2,6 +2,12 @@
 
 require 'rubygems'
 require 'bundler'
+require 'semver'
+
+def s_version
+  SemVer.find.format "%M.%m.%p%s"
+end
+
 begin
   Bundler.setup(:default, :development)
 rescue Bundler::BundlerError => e
@@ -17,12 +23,18 @@ Jeweler::Tasks.new do |gem|
   gem.name = "rubyneat_dashboard"
   gem.homepage = "http://rubyneat.com"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
+  gem.version = s_version
+  gem.summary = %Q{RubyNEAT Dashboard}
   gem.description = %Q{TODO: longer description of your gem}
   gem.email = "fred@lrcsoft.com"
   gem.authors = ["Fred Mitchell"]
   # dependencies defined in Gemfile
+  gem.files.exclude 'foo/**/*', 'rdoc/*',
+                    '.idea/**/*', '.idea/**/.*', '.yardoc/**/*',
+                    'app/**/*', 'doc/**/*',
+                    'app/**/.*', 'Guardfile'
 end
+
 Jeweler::RubygemsDotOrgTasks.new
 
 require 'rspec/core'

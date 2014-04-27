@@ -1,13 +1,13 @@
 source "http://rubygems.org"
 
 gem 'sinatra', '~> 1.4.5'
-gem 'thin', '~> 1.6.2'
+#gem 'thin', '~> 1.6.2'
 gem 'haml'
 gem 'sass'
 gem 'json'
 gem 'compass'
 gem 'barista'
-gem 'foundation'
+#gem 'foundation'
 gem 'sinatra-assetpack', :require => 'sinatra/assetpack'
 
 group :development do
