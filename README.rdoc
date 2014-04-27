@@ -8,7 +8,11 @@ In your Neater project, just include this in your Gemfile
 
  gem 'rubyneat_dashboard'
 
-== Contributing to rubyneat_dashboard
+
+== Usage
+http://localhost:3912
+
+== Contributing to RubyNEAT Dashboard
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
@@ -20,5 +24,5 @@ In your Neater project, just include this in your Gemfile
 
 == Copyright
 
-Copyright (c) 2014 LRCsoft. See LICENSE.txt for
-further details.
+Copyright (c) 2014 LRCsoft. Released under the MIT License.
+See LICENSE.txt for further details.

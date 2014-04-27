@@ -1,24 +1,44 @@
 require 'sinatra/base'
+require 'sinatra/assetpack'
 require 'barista'
-require 'sass/plugin/rack'
+require 'sass'
+require 'haml'
 
 class RubyneatDashboard < Sinatra::Base
-  register Barista::Integration::Sinatra
+  set :root, File.expand_path('..', File.dirname(__FILE__))
 
-  Sass::Plugin.options[:style] = :compressed
-  use Sass::Plugin::Rack
+  register Barista::Integration::Sinatra
+  register Sinatra::AssetPack
+
+  assets do
+    serve '/js',     from: 'app/js'        # Default
+    serve '/css',    from: 'app/css'       # Default
+    serve '/images', from: 'app/images'    # Default
+
+    # The second parameter defines where the compressed version will be served.
+    # (Note: that parameter is optional, AssetPack will figure it out.)
+    js :app, '/js/app.js', [
+        '/js/vendor/**/*.js',
+        '/js/lib/**/*.js'
+    ]
+
+    css :application, '/css/application.css', [
+        '/css/screen.css'
+    ]
+
+    js_compression  :jsmin    # :jsmin | :yui | :closure | :uglify
+    css_compression :simple   # :simple | :sass | :yui | :sqwish
+  end
 
   configure do
     set port: 3912
     set static: true
   end
 
-  get '/' do
+  get '/?' do
     haml :index
   end
 end
 
 
 RubyneatDashboard.run!
-
-
