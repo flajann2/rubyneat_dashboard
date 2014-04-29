@@ -1,22 +1,15 @@
 !!! 5
-%html{"ng-app" => 'Dashboard'}
+%html(ng-app = 'Dashboard')
   %head
     %title RubyNEAT Dashboard
     != css :application, media: 'screen'
     != js  :app
   %body
-    .header
-      .image
-        %img(src='images/logo.png')
-      .title
-        Dashboard
-      .headlines
-        Name of Neater Proj
     %nav.top-bar
       %ul.title-area
         %li.name
-          %h1
-            %a(href='#') My Site
+          %a(href='#')
+            %img(src='images/logo.png')
         %li.toggle-topbar.menu-icon
           %a(href='#')
             %span Menu
@@ -32,6 +25,3 @@
         %ul.left
           %li
             %a(href='#') Left Nav Button
-
-
-

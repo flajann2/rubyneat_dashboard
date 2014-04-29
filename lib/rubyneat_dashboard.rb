@@ -6,6 +6,7 @@ require 'haml'
 
 class RubyneatDashboard < Sinatra::Base
   set :root, File.expand_path('..', File.dirname(__FILE__))
+  set :logging, true
 
   register Barista::Integration::Sinatra
   register Sinatra::AssetPack
@@ -18,26 +19,26 @@ class RubyneatDashboard < Sinatra::Base
     # The second parameter defines where the compressed version will be served.
     # (Note: that parameter is optional, AssetPack will figure it out.)
     js :app, '/js/app.js',
-       [
-        '/js/jquery-2.1.0.js',
-        '/js/angular.js',
-        '/js/foundation.min.js',
-        '/js/foundation/*.js',
-        '/js/vendor/**/*.js',
-        '/js/lib/**/*.js',
-        '/js/dashboard.js',
-        '/js/dashboard/*.js'
-    ]
+        [
+          '/js/jquery-2.1.0.js',
+          '/js/angular.js',
+          '/js/foundation.min.js',
+          '/js/foundation/*.js',
+          '/js/vendor/**/*.js',
+          '/js/lib/**/*.js',
+          '/js/dashboard.js',
+          '/js/dashboard/*.js'
+        ]
 
-    css :application, '/css/application.css', [
-        '/css/foundation.css',
-        '/css/normalize.css',
-        '/css/vendor/*.css',
-        '/css/dashboard.css',
-        '/css/dashboard/*.css'
-    ]
+    css :application, '/css/application.css',
+        [
+          '/css/foundation.css',
+          '/css/vendor/*.css',
+          '/css/dashboard.css',
+          '/css/dashboard/*.css'
+        ]
 
-    js_compression  :jsmin    # :jsmin | :yui | :closure | :uglify
+    #js_compression  :jsmin    # :jsmin | :yui | :closure | :uglify
     css_compression :simple   # :simple | :sass | :yui | :sqwish
   end
 
@@ -46,9 +47,14 @@ class RubyneatDashboard < Sinatra::Base
     set static: true
   end
 
+  get '/data/' do
+  end
+
   get '/' do
     haml :index
   end
+
+
 end
 
 

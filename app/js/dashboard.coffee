@@ -6,8 +6,5 @@ app = angular.module("Dashboard", ['ngResource'])
 #)
 
 app.factory "Dashboard", ($resource) ->
-  $resource("/data/:id.json", {id: "@id"},
-    query:  {method: "GET"}
-    update: {method: "PATCH"}
-    delete: {method: "DELETE"}
+  $resource("/data/:id", {id: "@id"}
   )
