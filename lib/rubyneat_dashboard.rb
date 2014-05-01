@@ -54,7 +54,7 @@ class RubyneatDashboard < Sinatra::Base
     haml :layout
   end
 
-  get '/views/:view' do |view|
+  get '/views/*' do |view|
     haml view.to_sym, layout: false
   end
 

@@ -15,13 +15,18 @@ app.config [
       templateUrl: 'views/overview'
       controller:  'OverviewController'
     ).when("/populations",
-      templateUrl: "views/populations"
+      templateUrl: "views/populations/home"
       controller: "PopulationController"
-      resolve:
-        user: (SessionService) ->
-          SessionService.getCurrentUser()
+    ).when("/populations/general",
+      templateUrl: "views/populations/general"
+      controller: "PopulationController"
+    ).when("/populations/speciation",
+      templateUrl: "views/populations/speciation"
+      controller: "PopulationController"
+    ).when('/critters',
+      templateUrl: 'views/critters'
+      controller:  'CrittersController'
     ).otherwise redirectTo: "/"
-
-]
+  ]
 
 $DashboardController = ($scope) ->

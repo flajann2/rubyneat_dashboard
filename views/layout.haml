@@ -16,25 +16,28 @@
       %section.top-bar-section
         %ul.right
           %li.has-dropdown
-            %a(href='#') Controller
+            %a(href='#/controller') Controller
             %ul.dropdown
               %li
-                %a(href='#') First link in dropdown
+                %a(href='#/controller/params')
+                  %span Parameters
+                %a(href='#/controller/hisograms')
+                  %span Histograms
         %ul.left
           %li
-            %a(href='#') Overview
+            %a(href='#overview') Overview
           %li.has-dropdown
-            %a(href='#') Populations
+            %a(href='#populations') Populations
             %ul.dropdown
               %li
-                %a(href='#')
+                %a(href='#populations/general')
                   General
               %li
-                %a(href='#')
+                %a(href='#populations/speciation')
                   Speciation
 
           %li
-            %a(href='#') Critters
+            %a(href='#/critters') Critters
           %li.divider
     .content
       %div(ng-view)
