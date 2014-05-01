@@ -1,11 +1,11 @@
 !!! 5
-%html(ng-app = 'Dashboard')
+%html.no-js(ng-app = 'Dashboard')
   %head
     %title RubyNEAT Dashboard
     != css :application, media: 'screen'
     != js  :app
   %body
-    %nav.top-bar
+    %nav.top-bar(data-topbar)
       %ul.title-area
         %li.name
           %a(href='#')
@@ -15,13 +15,25 @@
             %span Menu
       %section.top-bar-section
         %ul.right
-          %li.active
-            %a(href='#') Right Button Active
           %li.has-dropdown
-            %a(href='#') Right Button Dropdown
+            %a(href='#') Controller
             %ul.dropdown
               %li
                 %a(href='#') First link in dropdown
         %ul.left
           %li
-            %a(href='#') Left Nav Button
+            %a(href='#') Overview
+          %li.has-dropdown
+            %a(href='#') Populations
+            %ul.dropdown
+              %li
+                %a(href='#')
+                  General
+              %li
+                %a(href='#')
+                  Speciation
+
+          %li
+            %a(href='#') Critters
+          %li.divider
+

@@ -22,20 +22,20 @@ class RubyneatDashboard < Sinatra::Base
         [
           '/js/jquery-2.1.0.js',
           '/js/angular.js',
-          '/js/foundation.min.js',
-          '/js/foundation/*.js',
-          '/js/vendor/**/*.js',
-          '/js/lib/**/*.js',
+          '/js/angular/**/*.js',
           '/js/dashboard.js',
-          '/js/dashboard/*.js'
+          '/js/dashboard/*.js',
+          '/js/foundation.min.js',
+         # '/js/foundation/*.js',
+          '/js/vendor/**/*.js',
         ]
 
     css :application, '/css/application.css',
         [
           '/css/foundation.css',
-          '/css/vendor/*.css',
-          '/css/dashboard.css',
-          '/css/dashboard/*.css'
+         # '/css/vendor/*.css',
+         # '/css/dashboard.css',
+         # '/css/dashboard/*.css'
         ]
 
     #js_compression  :jsmin    # :jsmin | :yui | :closure | :uglify

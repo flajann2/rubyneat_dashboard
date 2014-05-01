@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/rstacruz/sinatra-assetpack.git
-  revision: 39f6734fbfd491163c6270465147887b737b2115
+  revision: ffae6196ae8ab5004f68866a9e6e45b7984b7f03
   specs:
-    sinatra-assetpack (0.3.2)
+    sinatra-assetpack (0.3.3)
       jsmin
       rack-test
       sinatra
