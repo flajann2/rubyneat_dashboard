@@ -29,4 +29,15 @@ app.config [
     ).otherwise redirectTo: "/"
   ]
 
-$DashboardController = ($scope) ->
+app.directive 'pie', ->
+  link = ($scope, element, attr) ->
+    alert 'Pie Thrown'
+  { link: link,  restrict: 'E' }
+
+@DashboardController = ($scope) ->
+
+@OverviewController = ($scope) ->
+
+@PopulationController = ($scope) ->
+
+@HomeController = ($scope) ->
