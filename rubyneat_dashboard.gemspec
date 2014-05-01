@@ -31,7 +31,7 @@ Gem::Specification.new do |s|
     "lib/rubyneat_dashboard.rb",
     "spec/rubyneat_dashboard_spec.rb",
     "spec/spec_helper.rb",
-    "views/index.haml",
+    "views/overview.haml",
     "views/layout.haml"
   ]
   s.homepage = "http://rubyneat.com"
