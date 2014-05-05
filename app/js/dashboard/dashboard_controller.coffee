@@ -1,0 +1,2 @@
+@DashboardController = ($scope) ->
+

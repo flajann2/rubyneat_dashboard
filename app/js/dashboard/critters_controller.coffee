@@ -1,0 +1,1 @@
+@CrittersController = ($scope) ->

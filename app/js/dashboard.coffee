@@ -31,13 +31,9 @@ app.config [
 
 app.directive 'pie', ->
   link = ($scope, element, attr) ->
-    alert 'Pie Thrown'
-  { link: link,  restrict: 'E' }
+    alert 'Pie Thrown ' + $scope.data
+  link: link,
+  restrict: 'E',
+  scope:
+    data: '='
 
-@DashboardController = ($scope) ->
-
-@OverviewController = ($scope) ->
-
-@PopulationController = ($scope) ->
-
-@HomeController = ($scope) ->
