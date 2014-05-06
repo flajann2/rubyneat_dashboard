@@ -35,5 +35,5 @@ app.directive 'pie', ->
   link: link,
   restrict: 'E',
   scope:
-    data: '='
+    data: '@someData'
 
