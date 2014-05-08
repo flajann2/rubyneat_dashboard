@@ -9,6 +9,8 @@ gem 'compass'
 gem 'barista'
 gem 'sinatra-assetpack', :require => 'sinatra/assetpack', git: 'https://github.com/rstacruz/sinatra-assetpack.git'
 
+gem 'therubyracer'
+
 group :development do
   gem "rspec", "~> 2.8.0"
   gem "yard", "~> 0.7"
