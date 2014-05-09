@@ -4,61 +4,54 @@ require 'barista'
 require 'sass'
 require 'haml'
 
-class RubyneatDashboard < Sinatra::Base
-  set :root, File.expand_path('..', File.dirname(__FILE__))
-  set :logging, true
+require_relative 'rubyneat_dashboard/main'
 
-  register Barista::Integration::Sinatra
-  register Sinatra::AssetPack
+module Dashboard
+  class RubyneatDashboard < Sinatra::Base
+    set :root, File.expand_path('..', File.dirname(__FILE__))
+    set :logging, true
 
-  assets do
-    serve '/js',     from: 'app/js'        # Default
-    serve '/css',    from: 'app/css'       # Default
-    serve '/images', from: 'app/images'    # Default
+    register Barista::Integration::Sinatra
+    register Sinatra::AssetPack
+    register Routing::Main
+    register Routing::REST::Overview
 
-    # The second parameter defines where the compressed version will be served.
-    # (Note: that parameter is optional, AssetPack will figure it out.)
-    js :app, '/js/app.js',
-        [
-          '/js/jquery-2.1.0.js',
-          '/js/angular.js',
-          '/js/angular/**/*.js',
-          '/js/dashboard.js',
-          '/js/dashboard/*.js',
-          '/js/foundation.min.js',
-         # '/js/foundation/*.js',
-          '/js/vendor/**/*.js',
-        ]
+    assets do
+      serve '/js',     from: 'app/js'        # Default
+      serve '/css',    from: 'app/css'       # Default
+      serve '/images', from: 'app/images'    # Default
 
-    css :application, '/css/application.css',
-        [
-          '/css/foundation.css',
-         # '/css/vendor/*.css',
-         # '/css/dashboard.css',
-         # '/css/dashboard/*.css'
-        ]
+      # The second parameter defines where the compressed version will be served.
+      # (Note: that parameter is optional, AssetPack will figure it out.)
+      js :app, '/js/app.js',
+          [
+            '/js/jquery-2.1.0.js',
+            '/js/angular.js',
+            '/js/angular/**/*.js',
+            '/js/dashboard.js',
+            '/js/dashboard/*.js',
+            '/js/foundation.min.js',
+           # '/js/foundation/*.js',
+            '/js/vendor/**/*.js',
+          ]
 
-    #js_compression  :jsmin    # :jsmin | :yui | :closure | :uglify
-    css_compression :simple   # :simple | :sass | :yui | :sqwish
+      css :application, '/css/application.css',
+          [
+            '/css/foundation.css',
+           # '/css/vendor/*.css',
+           # '/css/dashboard.css',
+           # '/css/dashboard/*.css'
+          ]
+
+      #js_compression  :jsmin    # :jsmin | :yui | :closure | :uglify
+      css_compression :simple   # :simple | :sass | :yui | :sqwish
+    end
+
+    configure do
+      set port: 3912
+      set static: true
+    end
   end
-
-  configure do
-    set port: 3912
-    set static: true
-  end
-
-  get '/data/' do
-  end
-
-  get '/' do
-    haml :layout
-  end
-
-  get '/views/*' do |view|
-    haml view.to_sym, layout: false
-  end
-
 end
 
-
-RubyneatDashboard.run!
+Dashboard::RubyneatDashboard.run!
