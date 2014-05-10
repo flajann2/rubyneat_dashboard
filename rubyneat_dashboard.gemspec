@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Fred Mitchell"]
-  s.date = "2014-04-27"
+  s.date = "2014-05-09"
   s.description = "TODO: longer description of your gem"
   s.email = "fred@lrcsoft.com"
   s.extra_rdoc_files = [
@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
     ".document",
     ".rspec",
     ".sass-cache/b114455b2c708d8ae00bfa5eb291284996faaf1c/class_methods.rbc",
+    ".semver",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
@@ -29,10 +30,18 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/rubyneat_dashboard.rb",
+    "lib/rubyneat_dashboard/main.rb",
+    "lib/rubyneat_dashboard/overview_rest.rb",
+    "rubyneat_dashboard.gemspec",
     "spec/rubyneat_dashboard_spec.rb",
     "spec/spec_helper.rb",
+    "views/critters.haml",
+    "views/home.haml",
+    "views/layout.haml",
     "views/overview.haml",
-    "views/layout.haml"
+    "views/populations/general.haml",
+    "views/populations/home.haml",
+    "views/populations/speciation.haml"
   ]
   s.homepage = "http://rubyneat.com"
   s.licenses = ["MIT"]
@@ -44,12 +53,14 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<sinatra>, ["~> 1.4.5"])
+      s.add_runtime_dependency(%q<thin>, ["~> 1.6.2"])
       s.add_runtime_dependency(%q<haml>, [">= 0"])
       s.add_runtime_dependency(%q<sass>, [">= 0"])
       s.add_runtime_dependency(%q<json>, [">= 0"])
       s.add_runtime_dependency(%q<compass>, [">= 0"])
       s.add_runtime_dependency(%q<barista>, [">= 0"])
       s.add_runtime_dependency(%q<sinatra-assetpack>, [">= 0"])
+      s.add_runtime_dependency(%q<therubyracer>, [">= 0"])
       s.add_development_dependency(%q<rspec>, ["~> 2.8.0"])
       s.add_development_dependency(%q<yard>, ["~> 0.7"])
       s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
@@ -59,12 +70,14 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<semver>, ["~> 1"])
     else
       s.add_dependency(%q<sinatra>, ["~> 1.4.5"])
+      s.add_dependency(%q<thin>, ["~> 1.6.2"])
       s.add_dependency(%q<haml>, [">= 0"])
       s.add_dependency(%q<sass>, [">= 0"])
       s.add_dependency(%q<json>, [">= 0"])
       s.add_dependency(%q<compass>, [">= 0"])
       s.add_dependency(%q<barista>, [">= 0"])
       s.add_dependency(%q<sinatra-assetpack>, [">= 0"])
+      s.add_dependency(%q<therubyracer>, [">= 0"])
       s.add_dependency(%q<rspec>, ["~> 2.8.0"])
       s.add_dependency(%q<yard>, ["~> 0.7"])
       s.add_dependency(%q<rdoc>, ["~> 3.12"])
@@ -75,12 +88,14 @@ Gem::Specification.new do |s|
     end
   else
     s.add_dependency(%q<sinatra>, ["~> 1.4.5"])
+    s.add_dependency(%q<thin>, ["~> 1.6.2"])
     s.add_dependency(%q<haml>, [">= 0"])
     s.add_dependency(%q<sass>, [">= 0"])
     s.add_dependency(%q<json>, [">= 0"])
     s.add_dependency(%q<compass>, [">= 0"])
     s.add_dependency(%q<barista>, [">= 0"])
     s.add_dependency(%q<sinatra-assetpack>, [">= 0"])
+    s.add_dependency(%q<therubyracer>, [">= 0"])
     s.add_dependency(%q<rspec>, ["~> 2.8.0"])
     s.add_dependency(%q<yard>, ["~> 0.7"])
     s.add_dependency(%q<rdoc>, ["~> 3.12"])

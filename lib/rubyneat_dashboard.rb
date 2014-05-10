@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'sinatra/assetpack'
+require 'sinatra-websocket'
 require 'barista'
 require 'sass'
 require 'haml'
@@ -10,6 +11,8 @@ module Dashboard
   class RubyneatDashboard < Sinatra::Base
     set :root, File.expand_path('..', File.dirname(__FILE__))
     set :logging, true
+    set :server, 'thin'
+    set :sockets, []
 
     register Barista::Integration::Sinatra
     register Sinatra::AssetPack

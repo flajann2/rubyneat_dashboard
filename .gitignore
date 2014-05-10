@@ -28,10 +28,10 @@ pkg
 # saving you from having to 'pollute' every project you touch with them
 #
 # Not sure what to needs to be ignored for particular editors/OSes? Here's some ideas to get you started. (Remember, remove the leading # of the line)
-#
+
+
 # For MacOS:
-#
-#.DS_Store
+.DS_Store
 
 # For TextMate
 #*.tmproj
@@ -43,11 +43,13 @@ pkg
 #.\#*
 
 # For vim:
-#*.swp
+*.swp
 
 # For redcar:
-#.redcar
+.redcar
 
 # For rubinius:
-#*.rbc
+*.rbc
 
+# Gemcutting
+**/*.gem

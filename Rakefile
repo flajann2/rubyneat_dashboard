@@ -25,7 +25,7 @@ Jeweler::Tasks.new do |gem|
   gem.license = "MIT"
   gem.version = s_version
   gem.summary = %Q{RubyNEAT Dashboard}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.description = %Q{A web-based dashboard for your RubyNEAT development, http://localhost:3912/}
   gem.email = "fred@lrcsoft.com"
   gem.authors = ["Fred Mitchell"]
   # dependencies defined in Gemfile
