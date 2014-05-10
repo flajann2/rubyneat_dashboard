@@ -53,3 +53,6 @@ pkg
 
 # Gemcutting
 **/*.gem
+
+# Log files
+**/*.log

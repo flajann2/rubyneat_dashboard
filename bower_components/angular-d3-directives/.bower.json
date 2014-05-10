@@ -1,0 +1,27 @@
+{
+  "name": "angular-d3-directives",
+  "version": "0.0.3",
+  "main": [
+    "gauge/gauge.js"
+  ],
+  "ignore": [
+    "README.md"
+  ],
+  "dependencies": {
+    "angular": ">=1",
+    "d3": ">=3",
+    "underscore": ">=1.5"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/kontera-technologies/angular-d3-directives",
+  "_release": "0.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.3",
+    "commit": "999f19d69a6b5d92ad9f9687e333f69c0bcac290"
+  },
+  "_source": "git://github.com/kontera-technologies/angular-d3-directives.git",
+  "_target": "~0.0.3",
+  "_originalSource": "angular-d3-directives",
+  "_direct": true
+}

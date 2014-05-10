@@ -20,15 +20,18 @@ module Dashboard
     register Routing::REST::Overview
 
     assets do
-      serve '/js',     from: 'app/js'        # Default
-      serve '/css',    from: 'app/css'       # Default
-      serve '/images', from: 'app/images'    # Default
+      serve '/js',      from: 'app/js'           # Default
+      serve '/css',     from: 'app/css'          # Default
+      serve '/images',  from: 'app/images'       # Default
+      serve '/bower',   from: 'bower_components' # Default
+
 
       # The second parameter defines where the compressed version will be served.
       # (Note: that parameter is optional, AssetPack will figure it out.)
       js :app, '/js/app.js',
           [
-            '/js/jquery-2.1.0.js',
+            # '/js/jquery-2.1.0.js',
+            '/bower/jquery/dist/jquery.js',
             '/js/angular.js',
             '/js/angular/**/*.js',
             '/js/dashboard.js',
