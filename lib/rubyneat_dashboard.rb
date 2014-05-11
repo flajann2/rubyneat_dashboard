@@ -8,6 +8,7 @@ require 'haml'
 require_relative 'rubyneat_dashboard/main'
 
 module Dashboard
+
   class RubyneatDashboard < Sinatra::Base
     set :root, File.expand_path('..', File.dirname(__FILE__))
     set :logging, true
@@ -18,18 +19,18 @@ module Dashboard
     register Sinatra::AssetPack
     register Routing::Main
     register Routing::REST::Overview
+    register BowerDSL
 
     assets do
       serve '/js',      from: 'app/js'           # Default
       serve '/css',     from: 'app/css'          # Default
       serve '/images',  from: 'app/images'       # Default
-      serve '/bower',   from: 'bower_components' # Default
-
+      bower_serve
 
       # The second parameter defines where the compressed version will be served.
       # (Note: that parameter is optional, AssetPack will figure it out.)
       js :app, '/js/app.js',
-          [
+         [
             # '/js/jquery-2.1.0.js',
             '/bower/jquery/dist/jquery.js',
             '/js/angular.js',
@@ -39,7 +40,14 @@ module Dashboard
             '/js/foundation.min.js',
            # '/js/foundation/*.js',
             '/js/vendor/**/*.js',
-          ]
+         ] + bower(type: :js, modules:
+                    [
+                     :angular,
+                     :'angular-animate',
+                     :'angular-d3-directives',
+                     :'angular-pusher'
+                    ]
+                  )
 
       css :application, '/css/application.css',
           [

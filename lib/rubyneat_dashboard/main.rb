@@ -4,6 +4,7 @@ Main file to pull in all other modules
 
 require 'json'
 require 'semver'
+require_relative 'bower_dsl'
 require_relative 'overview_rest'
 
 module Dashboard
