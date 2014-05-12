@@ -26,28 +26,30 @@ module Dashboard
       serve '/css',     from: 'app/css'          # Default
       serve '/images',  from: 'app/images'       # Default
       bower_serve
+      foo = bower_packages # TODO Remove this, debugging only
+      puts foo
 
       # The second parameter defines where the compressed version will be served.
       # (Note: that parameter is optional, AssetPack will figure it out.)
       js :app, '/js/app.js',
          [
-            # '/js/jquery-2.1.0.js',
+            '/js/jquery-2.1.0.js',
             '/bower/jquery/dist/jquery.js',
             '/js/angular.js',
             '/js/angular/**/*.js',
             '/js/dashboard.js',
             '/js/dashboard/*.js',
             '/js/foundation.min.js',
-           # '/js/foundation/*.js',
+            '/js/foundation/*.js',
             '/js/vendor/**/*.js',
-         ] + bower(type: :js, modules:
-                    [
-                     :angular,
-                     :'angular-animate',
-                     :'angular-d3-directives',
-                     :'angular-pusher'
-                    ]
-                  )
+         ] #+ bower(type: :js, modules:
+           #         [
+           #          :angular,
+           #          :'angular-animate',
+           #          :'angular-d3-directives',
+           #          :'angular-pusher'
+           #         ]
+           #       )
 
       css :application, '/css/application.css',
           [

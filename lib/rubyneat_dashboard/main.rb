@@ -3,6 +3,7 @@ Main file to pull in all other modules
 =end
 
 require 'json'
+require 'json/stream'
 require 'semver'
 require_relative 'bower_dsl'
 require_relative 'overview_rest'
