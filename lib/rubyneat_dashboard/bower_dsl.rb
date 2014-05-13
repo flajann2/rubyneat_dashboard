@@ -1,4 +1,7 @@
+require 'logger'
+
 module Dashboard
+
   module BowerDSL
     def self.extended(mod)
       unless mod.root?
@@ -62,8 +65,10 @@ module Sinatra
       end
 
       def bower(type: nil, modules: [])
-        resolve_dependencies(modules).map{|mod| bower_packages[mod][:files] }.flatten
-        .select { |file| file =~ %r{\.#{type}$} }
+        r = resolve_dependencies(modules).map{|mod| bower_packages[mod][:files] }.flatten
+          .select { |file| file =~ %r{\.#{type}$} }
+        $log.debug r
+        r
       end
     end
   end
