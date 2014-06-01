@@ -8,7 +8,7 @@ gem 'json', '~> 1'
 gem 'json-stream', '~> 0'
 gem 'compass'
 gem 'barista'
-gem 'sinatra-assetpack', :require => 'sinatra/assetpack', git: 'https://github.com/rstacruz/sinatra-assetpack.git'
+gem 'sinatra-assetpack'
 gem 'sinatra-websocket'
 gem 'therubyracer'
 
