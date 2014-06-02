@@ -1,10 +1,11 @@
 {
   "name": "angular-pusher",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "authors": [
     "brian.woodward@gmail.com"
   ],
   "description": "AngularJS provider and service for Pusher",
+  "main": "./angular-pusher.js",
   "keywords": [
     "angular",
     "AngularJS",
@@ -26,14 +27,13 @@
   },
   "devDependencies": {},
   "homepage": "https://github.com/doowb/angular-pusher",
-  "_release": "0.0.7",
+  "_release": "0.0.8",
   "_resolution": {
     "type": "version",
-    "tag": "v0.0.7",
-    "commit": "510b83c2709f202b82fba14df539a21a9e56bcc2"
+    "tag": "v0.0.8",
+    "commit": "f846c6b9bd8896f520bf11bfe2dd430a8ae88ad1"
   },
   "_source": "git://github.com/doowb/angular-pusher.git",
   "_target": "~0.0.7",
-  "_originalSource": "angular-pusher",
-  "_direct": true
+  "_originalSource": "angular-pusher"
 }

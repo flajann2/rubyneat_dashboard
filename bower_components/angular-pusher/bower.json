@@ -1,10 +1,11 @@
 {
 	"name": "angular-pusher",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"authors": [
 		"brian.woodward@gmail.com"
 	],
 	"description": "AngularJS provider and service for Pusher",
+	"main": "./angular-pusher.js",
 	"keywords": [
 		"angular",
 		"AngularJS",
