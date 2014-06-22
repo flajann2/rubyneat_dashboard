@@ -10,7 +10,6 @@ gem 'compass'
 gem 'barista'
 gem 'sinatra-assetpack'
 gem 'sinatra-websocket'
-gem 'therubyracer'
 
 group :development do
   gem "rspec", "~> 2.8"
