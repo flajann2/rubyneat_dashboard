@@ -31,8 +31,8 @@ Jeweler::Tasks.new do |gem|
   # dependencies defined in Gemfile
   gem.files.exclude 'foo/**/*', 'rdoc/*',
                     '.idea/**/*', '.idea/**/.*', '.yardoc/**/*',
-                    'app/**/*', 'doc/**/*',
-                    'app/**/.*', 'Guardfile'
+                    'doc/**/*',
+                    'Guardfile'
 end
 
 Jeweler::RubygemsDotOrgTasks.new
