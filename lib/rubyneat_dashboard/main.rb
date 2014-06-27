@@ -7,6 +7,7 @@ require 'json/stream'
 require 'semver'
 require_relative 'bower_dsl'
 require_relative 'overview_rest'
+require_relative 'rubyneat_dsl'
 
 module Dashboard
   module Routing

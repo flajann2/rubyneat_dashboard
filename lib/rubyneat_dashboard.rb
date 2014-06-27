@@ -62,6 +62,17 @@ module Dashboard
       css_compression :simple   # :simple | :sass | :yui | :sqwish
     end
   end
+
+  def self.run_dashboard!
+    @@dashboard = Thread.new { Dashboard::RubyneatDashboard.run! }
+  end
+
+  def self.join!
+    @@dashboard.join
+  end
 end
 
-Dashboard::RubyneatDashboard.run!
+if __FILE__ == $0
+  Dashboard::run_dashboard!
+  at_exit { Dashboard::join! }
+end
