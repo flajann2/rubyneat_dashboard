@@ -9,7 +9,7 @@ module NEAT
       Dashboard::run_dashboard!
       block.() if block_given?
       NEAT::controller.pre_exit_func = Proc.new {
-        puts "Dashboard waiting for user to exit."
+        puts "Dashboard waiting for user to exit. Or you may do a ^C."
         Dashboard::join!
         puts "Dashboard exited."
       }

@@ -13,7 +13,7 @@ doc
 .bundle
 
 #Rubymine
-.idea/
+#.idea/
 
 # jeweler generated
 pkg
