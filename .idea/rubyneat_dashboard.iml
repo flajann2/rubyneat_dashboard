@@ -100,5 +100,9 @@
     <orderEntry type="library" scope="PROVIDED" name="tilt (v1.4.1, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="yard (v0.8.7.4, rbenv: 2.1.2) [gem]" level="application" />
   </component>
+  <component name="RModuleSettingsStorage">
+    <LOAD_PATH number="2" string0="$MODULE_DIR$/../rubyneat/lib" string1="$MODULE_DIR$/lib" />
+    <I18N_FOLDERS number="0" />
+  </component>
 </module>
 
