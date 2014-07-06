@@ -1,5 +1,6 @@
 app = angular.module("Dashboard", ['ngResource', 'ngRoute'])
 
+
 app.factory "Dashboard", ($resource) ->
   $resource("/data/:id", {id: "@id"}
   )

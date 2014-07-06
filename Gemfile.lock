@@ -116,6 +116,7 @@ DEPENDENCIES
   barista
   bundler (~> 1.0)
   compass
+  eventmachine
   haml (~> 4)
   jeweler (~> 2)
   json (~> 1)

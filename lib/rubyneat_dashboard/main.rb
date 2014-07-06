@@ -5,6 +5,7 @@ Main file to pull in all other modules
 require 'json'
 require 'json/stream'
 require 'semver'
+require 'eventmachine'
 require_relative 'bower_dsl'
 require_relative 'overview_rest'
 require_relative 'rubyneat_dsl'
@@ -19,6 +20,21 @@ module Dashboard
 
         app.get '/views/*' do |view|
           haml view.to_sym, layout: false
+        end
+
+        # streaming population data
+        list = []
+        app.get '/population', provides: 'text/event-stream' do
+          stream(:keep_open) do |out|
+            EventMachine::PeriodicTimer.new(20) { out << "data: \n\n" }
+            list << out
+            puts list.count
+            out.callback { puts 'closed'; list.delete(out) }
+            out.errback do
+              $log.warn "population stream lost connection"
+              list.delete out
+            end
+          end
         end
       end
     end

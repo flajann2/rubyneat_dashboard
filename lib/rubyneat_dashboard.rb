@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require 'sinatra/assetpack'
 require 'sinatra-websocket'
+require 'sinatra/streaming'
 require 'barista'
 require 'sass'
 require 'haml'
@@ -11,6 +12,8 @@ Logger.class_eval { alias :write :'<<' }
 
 module Dashboard
   class RubyneatDashboard < Sinatra::Base
+    helpers Sinatra::Streaming
+    
     set :root, File.expand_path('..', File.dirname(__FILE__))
     set :logging, true
     set :server, 'thin'

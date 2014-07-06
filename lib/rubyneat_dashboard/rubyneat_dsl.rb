@@ -5,8 +5,18 @@ Additions to the RubyNEAT DSL for hooking into the Dashboard.
 require 'pp'
 
 module NEAT
+  class DashboardQueues < NeatOb
+    attr_neat :population, queue: true
+    attr_neat :report,     queue: true
+    def initialize
+      super(NEAT::controller)
+    end
+  end
+
   module DSL
     def dashboard(&block)
+      @dq ||= DashboardQueues.new
+
       Dashboard::run_dashboard!
       block.() if block_given?
       NEAT::controller.pre_exit_add do
@@ -17,6 +27,10 @@ module NEAT
 
       NEAT::controller.end_run_add  do |c|
         puts 'Dashboard end_run called.'
+      end
+
+      NEAT::controller.report_add do |population, report|
+        pp report
       end
     end
   end
