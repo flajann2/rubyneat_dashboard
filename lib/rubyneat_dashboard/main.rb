@@ -11,6 +11,16 @@ require_relative 'overview_rest'
 require_relative 'rubyneat_dsl'
 
 module Dashboard
+  class << self
+    def dq=(dashboard_queues)
+      @dq = dashboard_queues
+    end
+
+    def dq
+      @dq
+    end
+  end
+
   module Routing
     module Main
       def self.registered(app)

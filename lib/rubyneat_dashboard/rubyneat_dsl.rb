@@ -11,11 +11,17 @@ module NEAT
     def initialize
       super(NEAT::controller)
     end
+
+    def each_setting
+      controller.parms.instance_variables.each { |name|
+        yield name, controller.parms.instance_variable_get(name)
+      }
+    end
   end
 
   module DSL
     def dashboard(&block)
-      @dq ||= DashboardQueues.new
+      Dashboard::dq ||= DashboardQueues.new
 
       Dashboard::run_dashboard!
       block.() if block_given?

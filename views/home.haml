@@ -12,16 +12,24 @@
     .columns.small-2.large-4
       RubyNEAT Version
     .columns.small-4.large-4
-      2.2.2bd
+      = Dashboard::dq.controller.version
     .columns.small-6.large-4
-      Date Maybe?
+
   .row
     .columns.small-2.large-4
       Neater
     .columns.small-4.large-4
-      Some neater
+      = Dashboard::dq.controller.neater
     .columns.small-6.large-4
-      Date Maybe?
+
+%h1 Settings
+.basics
+  - Dashboard::dq.each_setting do |name, value|
+    .row
+      .columns.small-2.large-2= name
+      .columns.small-2.large-2= value
+
+
 
 
 

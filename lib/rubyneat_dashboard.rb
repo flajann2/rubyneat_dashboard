@@ -55,7 +55,7 @@ module Dashboard
                         'angular-socket-io',
                         'angular-sanitize',
                         'jquery',
-                        #'foundation',
+                        'foundation',
                         #'angular-d3-directives',
                         #'angular-pusher',
                       ]
