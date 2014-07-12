@@ -50,6 +50,10 @@ module Dashboard
              modules: [
                         'angular',
                         'angular-animate',
+                        'angular-resource',
+                        'angular-route',
+                        'angular-socket-io',
+                        'angular-sanitize',
                         'jquery',
                         #'foundation',
                         #'angular-d3-directives',

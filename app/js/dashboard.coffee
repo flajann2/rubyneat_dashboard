@@ -1,6 +1,8 @@
-app = angular.module("Dashboard", ['ngResource',
-                                   'ngRoute',
-                                   'btford.socket-io'])
+app = angular.module("Dashboard", [ 'ngResource',
+                                    'ngRoute',
+                                    'ngLocale',
+                                    'ngSanitize',
+                                    'btford.socket-io'])
 
 
 app.factory "Dashboard", ($resource) ->
