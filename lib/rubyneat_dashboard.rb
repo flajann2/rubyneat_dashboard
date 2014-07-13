@@ -56,8 +56,8 @@ module Dashboard
                         'angular-sanitize',
                         'jquery',
                         'foundation',
-                        #'angular-d3-directives',
-                        #'angular-pusher',
+                        'angular-d3-directives',
+                        'angular-pusher',
                       ]
             ) + ['/js/dashboard.js','/js/dashboard/*.js','/js/vendor/**/*.js']
 
