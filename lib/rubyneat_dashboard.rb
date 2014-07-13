@@ -1,6 +1,5 @@
 require 'sinatra/base'
 require 'sinatra/assetpack'
-require 'sinatra-websocket'
 require 'sinatra/streaming'
 require 'barista'
 require 'sass'

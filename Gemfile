@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 
 gem 'sinatra', '~> 1'
-gem 'thin', '~> 1'
+gem 'thin'
 gem 'haml', '~> 4'
 gem 'sass', '~> 3'
 gem 'json', '~> 1'
@@ -9,7 +9,6 @@ gem 'json-stream', '~> 0'
 gem 'compass'
 gem 'barista'
 gem 'sinatra-assetpack'
-gem 'sinatra-websocket'
 gem 'eventmachine'
 
 group :development do

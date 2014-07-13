@@ -8,12 +8,6 @@ app = angular.module("Dashboard", [ 'ngResource',
 app.factory "Dashboard", ($resource) ->
   $resource("/data/:id", {id: "@id"})
 
-app.factory 'PopulationSocket', (socketFactory) ->
-  socketFactory(
-    ioSocket: io.connect('/population')
-    prefix: 'pop-'
-  )
-
 app.config [
   "$routeProvider"
   ($routeProvider) ->

@@ -36,14 +36,23 @@ module Dashboard
         list = []
         app.get '/population', provides: 'text/event-stream' do
           stream(:keep_open) do |out|
-            EventMachine::PeriodicTimer.new(20) { out << "data: \n\n" }
+            EventMachine::PeriodicTimer.new(1) {
+              j = JSON( { event: 'message',
+                          time: Time.now })
+              payload = "event:message\ndata: #{j}\n\n"
+              puts payload
+              out << payload
+            }
             list << out
             puts list.count
-            out.callback { puts 'closed'; list.delete(out) }
-            out.errback do
+            out.callback {
+              puts 'closed'
+              list.delete(out)
+            }
+            out.errback {
               $log.warn "population stream lost connection"
               list.delete out
-            end
+            }
           end
         end
       end
