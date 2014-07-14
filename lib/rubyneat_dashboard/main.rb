@@ -2,13 +2,12 @@
 Main file to pull in all other modules
 =end
 
-require 'json'
-require 'json/stream'
 require 'semver'
 require 'eventmachine'
 require_relative 'bower_dsl'
 require_relative 'overview_rest'
 require_relative 'rubyneat_dsl'
+require_relative 'stream_helpers'
 
 module Dashboard
   class << self
@@ -23,36 +22,37 @@ module Dashboard
 
   module Routing
     module Main
-      def self.registered(app)
-        app.get '/' do
-          haml :layout
-        end
 
-        app.get '/views/*' do |view|
-          haml view.to_sym, layout: false
-        end
+      class << self
+        def registered(app)
+          app.get '/' do
+            haml :layout
+          end
 
-        # streaming population data
-        list = []
-        app.get '/population', provides: 'text/event-stream' do
-          stream(:keep_open) do |out|
-            EventMachine::PeriodicTimer.new(1) {
-              j = JSON( { event: 'message',
-                          time: Time.now })
-              payload = "event:message\ndata: #{j}\n\n"
-              puts payload
-              out << payload
-            }
-            list << out
-            puts list.count
-            out.callback {
-              puts 'closed'
-              list.delete(out)
-            }
-            out.errback {
-              $log.warn "population stream lost connection"
-              list.delete out
-            }
+          app.get '/views/*' do |view|
+            haml view.to_sym, layout: false
+          end
+
+          # streaming population data
+          list = []
+          app.get '/population', provides: 'text/event-stream' do
+            stream(:keep_open) do |out|
+              EventMachine::PeriodicTimer.new(1) {
+                payload = StreamHelpers.wrap_for_sending payload: { event: 'message', time: Time.now }
+                puts payload
+                out << payload
+              }
+              list << out
+              puts list.count
+              out.callback {
+                puts 'closed'
+                list.delete(out)
+              }
+              out.errback {
+                $log.warn "population stream lost connection"
+                list.delete out
+              }
+            end
           end
         end
       end
