@@ -508,9 +508,9 @@ Gem::Specification.new do |s|
     "views/home.haml",
     "views/layout.haml",
     "views/overview.haml",
-    "views/populations/general.haml",
-    "views/populations/home.haml",
-    "views/populations/speciation.haml"
+    "views/population/general.haml",
+    "views/population/home.haml",
+    "views/population/speciation.haml"
   ]
   s.homepage = "http://rubyneat.com"
   s.licenses = ["MIT"]

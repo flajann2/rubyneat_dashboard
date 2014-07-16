@@ -2,11 +2,13 @@ require 'json'
 require 'json/stream'
 require_relative 'main'
 
-# FIXME: we need to make the available functions mix in better.
 module StreamHelpers
   module_function
 
-  def wrap_for_sending(payload:, type: :message)
-    "event:#{type}\ndata: #{JSON(payload)}\n\n"
+  # Payload wrapper, giving the klass will be used for possible routing at the
+  # client level.
+  def wrap_for_sending(payload:, klass: :general, type: :message)
+    pkt = JSON({payload: payload, klass: klass, type: type})
+    "event:#{type}\ndata: #{pkt}\n\n"
   end
 end

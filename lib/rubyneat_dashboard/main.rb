@@ -9,6 +9,8 @@ require_relative 'overview_rest'
 require_relative 'rubyneat_dsl'
 require_relative 'stream_helpers'
 
+include StreamHelpers
+
 module Dashboard
   class << self
     def dq=(dashboard_queues)
@@ -38,7 +40,7 @@ module Dashboard
           app.get '/population', provides: 'text/event-stream' do
             stream(:keep_open) do |out|
               EventMachine::PeriodicTimer.new(1) {
-                payload = StreamHelpers.wrap_for_sending payload: { event: 'message', time: Time.now }
+                payload = wrap_for_sending payload: { event: 'message', time: Time.now }
                 puts payload
                 out << payload
               }

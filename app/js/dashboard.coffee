@@ -18,14 +18,14 @@ app.config [
     ).when('/overview',
       templateUrl: 'views/overview'
       controller:  'OverviewController'
-    ).when("/populations",
-      templateUrl: "views/populations/home"
+    ).when("/population",
+      templateUrl: "views/population/home"
       controller: "PopulationController"
-    ).when("/populations/general",
-      templateUrl: "views/populations/general"
+    ).when("/population/general",
+      templateUrl: "views/population/general"
       controller: "PopulationController"
-    ).when("/populations/speciation",
-      templateUrl: "views/populations/speciation"
+    ).when("/population/speciation",
+      templateUrl: "views/population/speciation"
       controller: "PopulationController"
     ).when('/critters',
       templateUrl: 'views/critters'
