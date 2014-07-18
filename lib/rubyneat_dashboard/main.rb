@@ -39,8 +39,8 @@ module Dashboard
           list = []
           app.get '/population', provides: 'text/event-stream' do
             stream(:keep_open) do |out|
-              EventMachine::PeriodicTimer.new(1) {
-                payload = wrap_for_sending payload: { event: 'message', time: Time.now }
+              loop {
+                payload = wrap_for_sending payload: Dashboard.dq.population.pop
                 puts payload
                 out << payload
               }

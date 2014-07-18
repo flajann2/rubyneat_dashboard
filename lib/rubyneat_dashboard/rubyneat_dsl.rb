@@ -35,8 +35,9 @@ module NEAT
         puts 'Dashboard end_run called.'
       end
 
-      NEAT::controller.report_add do |population, report|
-        pp report
+      NEAT::controller.report_add do |pop, rept|
+        pp rept
+        Dashboard.dq.population << rept
       end
     end
   end
