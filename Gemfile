@@ -10,6 +10,7 @@ gem 'compass'
 gem 'barista'
 gem 'sinatra-assetpack'
 gem 'eventmachine'
+gem 'aquarium'
 
 group :development do
   gem "rspec", "~> 2.8"
