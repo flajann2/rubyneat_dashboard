@@ -36,7 +36,7 @@ describe Pipeline::Pipe do
   it "handles concurrency" do
     tout = Thread.new do
       (0..CNTO).each{ |j|
-        (i, num) = @pipe.shift
+        (i, num) = @pipe.next
         expect(j).to eq i
         expect(num).to eq j * 7 + 3
       }

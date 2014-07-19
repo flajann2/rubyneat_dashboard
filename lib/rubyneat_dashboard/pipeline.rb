@@ -26,9 +26,13 @@ module Pipeline
       @resource = ConditionVariable.new
     end
 
+    alias_method :next, :shift
+    alias_method :dequeue, :shift
+    alias_method :enqueue, :push
+    alias_method :enqueue, :push
     # enqueue
     around calls_to: [:<<,
-                      :push,
+                      :enqueue,
                       :unshift
     ] do |join_point, pipe, *args|
       result = nil
@@ -41,7 +45,8 @@ module Pipeline
 
     # dequeue
     around calls_to: [:pop,
-                      :shift
+                      :next,
+                      :dequeue
     ] do |join_point, pipe, *args|
       result = nil
       pipe.semaphore.synchronize {
