@@ -21,7 +21,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 
 require 'rspec'
 #require 'rubyneat_dashboard'
-require 'pipeline'
+require 'queue_ding'
 
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.

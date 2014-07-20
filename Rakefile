@@ -24,11 +24,16 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://rubyneat.com"
   gem.license = "MIT"
   gem.version = s_version
+  gem.required_ruby_version = '>= 2.0'
   gem.summary = %Q{RubyNEAT Dashboard}
-  gem.description = %Q{A web-based dashboard for your RubyNEAT development, http://localhost:3912/}
-  gem.email = "fred@lrcsoft.com"
+  gem.description = %Q{
+  A web-based Dashboard for your RubyNEAT development,
+  http://localhost:3912
+  }
+
+  gem.email = "lordalveric@yahoo.com"
   gem.authors = ["Fred Mitchell"]
-  # dependencies defined in Gemfile
+
   gem.files.exclude 'foo/**/*', 'rdoc/*',
                     '.idea/**/*', '.idea/**/.*', '.yardoc/**/*',
                     'doc/**/*',

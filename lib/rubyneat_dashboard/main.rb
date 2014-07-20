@@ -8,6 +8,7 @@ require_relative 'bower_dsl'
 require_relative 'overview_rest'
 require_relative 'rubyneat_dsl'
 require_relative 'stream_helpers'
+require_relative 'pipeline'
 
 include StreamHelpers
 
