@@ -10,6 +10,8 @@ require_relative 'rubyneat_dashboard/main'
 Logger.class_eval { alias :write :'<<' }
 
 module Dashboard
+  class DashboardException < Exception; end
+
   class RubyneatDashboard < Sinatra::Base
     helpers Sinatra::Streaming
     
@@ -58,10 +60,14 @@ module Dashboard
                         'angular-d3-directives',
                         'angular-pusher',
                       ]
-            ) + ['/js/dashboard.js','/js/dashboard/*.js','/js/vendor/**/*.js']
+            ) + ['/js/dashboard.js',
+                 '/js/dashboard/*.js',
+                 '/js/dashboard/**/*.js']
 
       css :application, '/css/application.css', bower(type: :css,
-             modules: ['foundation']
+             modules: [
+                        'foundation'
+                      ]
       ) + ['/css/vendor/*.css', '/css/dashboard.css', '/css/dashboard/*.css']
 
       #js_compression  :jsmin    # :jsmin | :yui | :closure | :uglify
