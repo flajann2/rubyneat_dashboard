@@ -26,3 +26,62 @@ http://localhost:3912
 
 Copyright (c) 2014 LRCsoft. Released under the MIT License.
 See LICENSE.txt for further details.
+
+== Internal Documentation
+
+This section is meant for those who might want to fork and modify RubyNEAT Dashboard
+for their own purposes. More importantly, it reprents my own notes of what I did and
+what internal standards I set for myelf in the code. I make no promises here, as this
+is basically my own scratchpad. That which is more formalized shall find itself migrating
+above this section. :D
+
+=== D3 Directive Conventions
+
+Becuse I expect there to be a large number of directives defined here, especially for
+the many D3-based charts I intend to add, I have decided on a naming convention up-front.
+
+Since the organization of the Dashboard will be into various sections, I will
+try to roughly reflect that here, though it is not set in concrete. For instance,
+<population-progress-chart> may, of course, be used elsewhere besides the Population
+section of the Dashboard.
+
+Firstly, most, if not all D3 directives are meant to be dynamic. As such, they will
+need something to set their data source. The details are yet to be firmed up, and I will
+firm them up as I move along here. But every effort will be used to avoid hard-coded data
+sources unless it makes sense. At worse, there may be a default datasource that can
+be overriden.
+
+==== Naming Convention
+
+Basically, the naming convention shall be:
+
+ sectionname-functionalityname-typename
+
+For example,
+
+ <population-progress-chart>
+
+which will, of course represent the progress of evolution of the population.
+In this specific case, the datasource shall have a default, but can be set to
+something else. Currently, there is only one datasource, but that is expected to
+change down the road.
+
+Some directives may be graphical displays that are not charts, such as the topology
+of a critter. In that case, the directive would be:
+
+ <critter-genotype-topology>
+
+or
+
+ <critter-phenotype-topology>
+
+Which represent 2 diffrent ways of looking at the topology of a critter.
+The former would simply be a list of connections and their innovation numbers,
+the latter would actually be a connected graph of the neurons and perhaps
+their weights.
+
+==== Directives defined so far
+
+ <population-progress-chart>
+ <critter-genotype-topology>
+ <critter-phenotype-topology>
