@@ -55,7 +55,7 @@ be overriden.
 
 Basically, the naming convention shall be:
 
- sectionname-functionalityname-typename
+ <sectionname-functionalityname-typename>
 
 For example,
 

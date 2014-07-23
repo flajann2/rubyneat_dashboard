@@ -1,14 +1,14 @@
-app = angular.module("Dashboard", [ 'ngResource',
-                                    'ngRoute',
-                                    'ngLocale',
-                                    'ngSanitize',
-                                    'btford.socket-io'])
+@DashboardApp = angular.module("Dashboard", [ 'ngResource',
+                                              'ngRoute',
+                                              'ngLocale',
+                                              'ngSanitize',
+                                              'btford.socket-io'])
 
 
-app.factory "Dashboard", ($resource) ->
+@DashboardApp.factory "Dashboard", ($resource) ->
   $resource("/data/:id", {id: "@id"})
 
-app.config [
+@DashboardApp.config [
   "$routeProvider"
   ($routeProvider) ->
     $routeProvider
@@ -33,7 +33,7 @@ app.config [
     ).otherwise redirectTo: "/"
   ]
 
-app.directive 'pie', ->
+@DashboardApp.directive 'pie', ->
   link = (scope, el, attr) ->
     console.log('Pie Thrown ' + scope.data)
     color = d3.scale.category10()
