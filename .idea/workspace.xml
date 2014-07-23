@@ -2,26 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5119db3-bf80-4204-b776-1488f2dc7969" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/rubyneat_dashboard/pipeline.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/lib/rubyneat_dashboard/pipeline_spec.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/.ruby-version" afterPath="$PROJECT_DIR$/../rubyneat/.ruby-version" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat_examples/.ruby-version" afterPath="$PROJECT_DIR$/../rubyneat_examples/.ruby-version" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/.semver" afterPath="$PROJECT_DIR$/../rubyneat/.semver" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/Gemfile.lock" afterPath="$PROJECT_DIR$/../rubyneat/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat_examples/Gemfile.lock" afterPath="$PROJECT_DIR$/../rubyneat_examples/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/Gemfile" afterPath="$PROJECT_DIR$/../rubyneat/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat_examples/Gemfile" afterPath="$PROJECT_DIR$/../rubyneat_examples/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/Rakefile" afterPath="$PROJECT_DIR$/../rubyneat/Rakefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/rubyneat_dashboard/main.rb" afterPath="$PROJECT_DIR$/lib/rubyneat_dashboard/main.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/rubyneat.gemspec" afterPath="$PROJECT_DIR$/../rubyneat/rubyneat.gemspec" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/.idea/rubyneat.iml" afterPath="$PROJECT_DIR$/../rubyneat/.idea/rubyneat.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/rubyneat.rb" afterPath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/rubyneat.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rubyneat_dashboard.gemspec" afterPath="$PROJECT_DIR$/rubyneat_dashboard.gemspec" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/rubyneat_dashboard.iml" afterPath="$PROJECT_DIR$/.idea/rubyneat_dashboard.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/spec_helper.rb" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="rubyneat_dashboard.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,10 +70,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="rubyneat.rb" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="rubyneat.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/../rubyneat/lib/rubyneat/rubyneat.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6926148" vertical-offset="1615" max-vertical-offset="10872">
+                <state vertical-scroll-proportion="-12.851851" vertical-offset="1615" max-vertical-offset="10872">
                   <caret line="109" column="24" selection-start-line="109" selection-start-column="24" selection-end-line="109" selection-end-column="24" />
                   <folding />
                 </state>
@@ -121,11 +110,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="xor_neat.rb" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="xor_neat.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/../rubyneat_examples/neater/xor_neat.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1814" max-vertical-offset="2682">
-                  <caret line="123" column="32" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
+                <state vertical-scroll-proportion="0.75" vertical-offset="0" max-vertical-offset="2682">
+                  <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -168,8 +157,8 @@
           <file leaf-file-name="spec_helper.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8003697" vertical-offset="143" max-vertical-offset="684">
-                  <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+                <state vertical-scroll-proportion="1.0314233" vertical-offset="0" max-vertical-offset="684">
+                  <caret line="31" column="3" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
@@ -206,7 +195,7 @@
   </component>
   <component name="Git.Settings">
     <option name="SYNC_SETTING" value="DONT" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../rubyneat" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../rubyneat_examples" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -240,7 +229,6 @@
         <option value="$PROJECT_DIR$/lib/rubyneat_dashboard/stream_helpers.rb" />
         <option value="$PROJECT_DIR$/app/js/dashboard.coffee" />
         <option value="$PROJECT_DIR$/views/layout.haml" />
-        <option value="$PROJECT_DIR$/../rubyneat_examples/neater/xor_neat.rb" />
         <option value="$PROJECT_DIR$/lib/rubyneat_dashboard/rubyneat_dsl.rb" />
         <option value="$PROJECT_DIR$/spec/rubyneat_dashboard_spec.rb" />
         <option value="$PROJECT_DIR$/spec/lib/rubyneat_dashboard/pipeline_spec.rb" />
@@ -255,6 +243,7 @@
         <option value="$PROJECT_DIR$/../rubyneat_examples/Gemfile" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/../rubyneat/lib/rubyneat/rubyneat.rb" />
+        <option value="$PROJECT_DIR$/../rubyneat_examples/neater/xor_neat.rb" />
       </list>
     </option>
   </component>
@@ -315,39 +304,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rubyneat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rubyneat_dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rubyneat" />
+              <option name="myItemId" value="rubyneat_examples" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rubyneat_dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rubyneat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rubyneat" />
+              <option name="myItemId" value="neater" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -534,7 +495,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31057268" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35022026" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35022026" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15282215" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -836,14 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../rubyneat_examples/segfault">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4725537" vertical-offset="0" max-vertical-offset="32202">
-          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/rubyneat_dashboard.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
@@ -880,14 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48195577" vertical-offset="0" max-vertical-offset="859">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../rubyneat_examples/neater/xor_neat.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1814" max-vertical-offset="2682">
-          <caret line="123" column="32" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -940,14 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8003697" vertical-offset="143" max-vertical-offset="684">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rubyneat_dashboard-0.4.0alpha.0/lib/rubyneat_dashboard/rubyneat_dsl.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
@@ -956,10 +893,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0314233" vertical-offset="0" max-vertical-offset="684">
+          <caret line="31" column="3" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../rubyneat/lib/rubyneat/rubyneat.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6926148" vertical-offset="1615" max-vertical-offset="10872">
+        <state vertical-scroll-proportion="-12.851851" vertical-offset="1615" max-vertical-offset="10872">
           <caret line="109" column="24" selection-start-line="109" selection-start-column="24" selection-end-line="109" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../rubyneat_examples/neater/xor_neat.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75" vertical-offset="0" max-vertical-offset="2682">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
           <folding />
         </state>
       </provider>
