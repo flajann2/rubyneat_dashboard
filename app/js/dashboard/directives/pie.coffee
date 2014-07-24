@@ -19,7 +19,7 @@
       width: width
       height: height
     )
-    g = svg.append('g').attr('transform', "translate(#{width/2}, #{height/2}")
+    g = svg.append('g').attr('transform', "translate(#{width/2}, #{height/2})")
     arcs = g.selectAll('path').data(pie(data))
       .enter().append('path')
       .style('stroke', 'white')
