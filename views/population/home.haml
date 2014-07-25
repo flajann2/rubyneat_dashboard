@@ -1,7 +1,6 @@
 %h1 Population Home
 .pop(ng-controller = 'PopulationController' ng-init = "init()")
-  %p
-    population-progress-chart
+  %ppopulation-progress-chart()
     Progress Chart
   %pie(data = "[5, 2, 7, 3, 6]" width = "200" height = "200")
   .entries
