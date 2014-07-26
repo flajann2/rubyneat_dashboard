@@ -59,6 +59,7 @@ module Dashboard
                         'foundation',
                         'angular-d3-directives',
                         'angular-pusher',
+                        'rickshaw',
                       ]
             ) + ['/js/dashboard.js',
                  '/js/dashboard/*.js',
@@ -66,7 +67,9 @@ module Dashboard
 
       css :application, '/css/application.css', bower(type: :css,
              modules: [
-                        'foundation'
+                        'foundation',
+                        'rickshaw',
+                        'angular',
                       ]
       ) + ['/css/vendor/*.css', '/css/dashboard.css', '/css/dashboard/*.css']
 
