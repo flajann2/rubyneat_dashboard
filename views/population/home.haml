@@ -1,7 +1,8 @@
 %h1 Population Home
 .pop(ng-controller = 'PopulationController' ng-init = "init()")
-  %ppopulation-progress-chart()
-    Progress Chart
-  %pie(data = "[5, 2, 7, 3, 6]" width = "200" height = "200")
+  .foopie
+    %pie(data = "[3,5,7,11,13,17,19,23]" width = "100" height = "100")
+  .foochart
+    %population-progress-chart(data = "[{x: 1, y: 1},{x: 1, y: 1},{x: 2, y: 22},{x: 3, y: 40}]")
   .entries
     The entries are {{ entries }}

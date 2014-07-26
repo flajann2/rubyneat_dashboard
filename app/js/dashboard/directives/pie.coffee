@@ -31,9 +31,9 @@
     ->
       arcs.data(pie(data)).attr('d', arc)
     , true)
-  link: link,
-  restrict: 'E',
+  link: link
+  restrict: 'E'
   scope:
-    data: '='
-    width: '='
+    data:   '='
+    width:  '='
     height: '='
