@@ -36,8 +36,7 @@ module NEAT
       end
 
       NEAT::controller.report_add do |pop, rept|
-        pp rept
-        Dashboard.dq.population << rept
+        Dashboard.dq.population << Dashboard.report_on(pop, rept)
       end
     end
   end
