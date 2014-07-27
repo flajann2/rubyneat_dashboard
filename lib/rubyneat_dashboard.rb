@@ -59,7 +59,6 @@ module Dashboard
                         'foundation',
                         'angular-d3-directives',
                         'angular-pusher',
-                        'rickshaw',
                       ]
             ) + ['/js/dashboard.js',
                  '/js/dashboard/*.js',
@@ -68,10 +67,11 @@ module Dashboard
       css :application, '/css/application.css', bower(type: :css,
              modules: [
                         'foundation',
-                        'rickshaw',
                         'angular',
                       ]
-      ) + ['/css/vendor/*.css', '/css/dashboard.css', '/css/dashboard/*.css']
+      ) + ['/css/vendor/*.css',
+           '/css/dashboard.css',
+           '/css/dashboard/**/*.css']
 
       #js_compression  :jsmin    # :jsmin | :yui | :closure | :uglify
       css_compression :simple   # :simple | :sass | :yui | :sqwish
