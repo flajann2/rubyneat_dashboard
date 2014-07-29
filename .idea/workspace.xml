@@ -2,167 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5119db3-bf80-4204-b776-1488f2dc7969" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/dashboard/linechart.sass" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/.jshintignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/.rock.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/ajax.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/bars.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/colors.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/css/extensions.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/css/lines.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/data/data.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/data/data.jsonp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/data/data2.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/data/status.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/extensions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/fixed.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/formatter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/gaps.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/hover.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/images/interp_cardinal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/images/interp_linear.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/images/interp_step.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/images/offset_pct.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/images/offset_stack.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/images/offset_stream.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/images/offset_value.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/images/om_bar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/images/om_curves.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/images/om_lines.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/images/om_percent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/images/om_scatter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/images/om_stack.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/images/om_step.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/images/om_stream.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/inconsistent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/js/extensions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/jsonp.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/legend.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/lineplot.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/lines.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/logscale.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/milliseconds.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/multi.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/negative.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/refresh.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/resize.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/scaled.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/scatterplot.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/screenshots/ajax.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/screenshots/colors.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/screenshots/extensions.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/screenshots/lines.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/screenshots/logscale.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/screenshots/scaled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/screenshots/scatterplot.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/screenshots/simple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/screenshots/start.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/screenshots/status.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/screenshots/stops.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/screenshots/y_axis.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/series.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/socket.io/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/socket.io/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/socket.io/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/socket.io/socket.io.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/sparse.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/start.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/status.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/stops.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/timescale.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/x_axis.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/examples/y_axis.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/rickshaw.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/rickshaw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/rickshaw.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/rickshaw.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/css/detail.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/css/graph.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/css/legend.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/helpers/endUMD.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/helpers/startUMD.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Class.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Color.Palette.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Compat.ClassList.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Fixtures.Color.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Fixtures.Number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Fixtures.RandomData.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Fixtures.Time.Local.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Fixtures.Time.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.Ajax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.Annotate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.Axis.Time.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.Axis.X.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.Axis.Y.Scaled.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.Axis.Y.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.Behavior.Series.Highlight.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.Behavior.Series.Order.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.Behavior.Series.Toggle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.HoverDetail.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.JSONP.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.Legend.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.RangeSlider.Preview.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.RangeSlider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.Renderer.Area.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.Renderer.Bar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.Renderer.Line.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.Renderer.LinePlot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.Renderer.Multi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.Renderer.ScatterPlot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.Renderer.Stack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.Renderer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.Smoother.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.Socketio.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Graph.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Series.FixedDuration.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.Series.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/src/js/Rickshaw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tests/Rickshaw.Class.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tests/Rickshaw.Fixtures.Time.Local.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tests/Rickshaw.Fixtures.Time.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tests/Rickshaw.Graph.Axis.X.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tests/Rickshaw.Graph.Axis.Y.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tests/Rickshaw.Graph.Legend.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tests/Rickshaw.Graph.RangeSlider.Preview.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tests/Rickshaw.Graph.Renderer.Multi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tests/Rickshaw.Graph.Renderer.Scatterplot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tests/Rickshaw.Graph.Renderer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tests/Rickshaw.Graph.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tests/Rickshaw.Series.FixedDuration.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tests/Rickshaw.Series.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tests/data/simple.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tutorial/example_01.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tutorial/example_02.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tutorial/example_03.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tutorial/example_04.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tutorial/example_05.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tutorial/example_06.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tutorial/example_07.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tutorial/introduction.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tutorial/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tutorial/transform.pl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tutorial/transform_epoch.pl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tutorial/transform_region.pl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tutorial/vendor/prettify/prettify.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/tutorial/vendor/prettify/prettify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/vendor/d3.layout.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/vendor/d3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/vendor/d3.v2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/rickshaw/vendor/d3.v3.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/Gemfile.lock" afterPath="$PROJECT_DIR$/../rubyneat/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat_examples/Gemfile.lock" afterPath="$PROJECT_DIR$/../rubyneat_examples/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat_examples/Gemfile" afterPath="$PROJECT_DIR$/../rubyneat_examples/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../deep_dive/lib/deep_dive/deep_dive.rb" afterPath="$PROJECT_DIR$/../deep_dive/lib/deep_dive/deep_dive.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/population/home.haml" afterPath="$PROJECT_DIR$/views/population/home.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/dashboard/directives/population_progress_chart.coffee" afterPath="$PROJECT_DIR$/app/js/dashboard/directives/population_progress_chart.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/rubyneat_dashboard.rb" afterPath="$PROJECT_DIR$/lib/rubyneat_dashboard.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/.idea/rubyneat.iml" afterPath="$PROJECT_DIR$/../rubyneat/.idea/rubyneat.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/rubyneat_dashboard.iml" afterPath="$PROJECT_DIR$/.idea/rubyneat_dashboard.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="rubyneat_dashboard.iws" />
@@ -176,7 +26,7 @@
   <component name="ChangesViewManager" flattened_view="false" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/rubyneat_dashboard@Dashboard_Rspec.coverage" NAME="Dashboard Rspec Coverage Results" MODIFIED="1405872950818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="rubyneat_dashboard" />
-    <SUITE FILE_PATH="coverage/rubyneat_dashboard@NEATxor.coverage" NAME="NEATxor Coverage Results" MODIFIED="1406469773501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../rubyneat_examples" MODULE_NAME="rubyneat_examples" />
+    <SUITE FILE_PATH="coverage/rubyneat_dashboard@NEATxor.coverage" NAME="NEATxor Coverage Results" MODIFIED="1406654507810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../rubyneat_examples" MODULE_NAME="rubyneat_examples" />
     <SUITE FILE_PATH="coverage/rubyneat_dashboard@Dashboard.coverage" NAME="Dashboard Coverage Results" MODIFIED="1403433407871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyneat_dashboard" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -192,13 +42,13 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.49155843">
       <split-first>
-        <splitter split-orientation="vertical" split-proportion="0.15164836">
+        <splitter split-orientation="vertical" split-proportion="0.16703297">
           <split-first>
             <leaf>
               <file leaf-file-name="population_service.coffee" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/js/dashboard/services/population_service.coffee">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.5181818" vertical-offset="33" max-vertical-offset="198">
+                    <state vertical-scroll-proportion="1.7647059" vertical-offset="0" max-vertical-offset="198">
                       <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
                       <folding />
                     </state>
@@ -219,11 +69,11 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="population_progress_chart.coffee" pinned="false" current="false" current-in-tab="true">
+              <file leaf-file-name="population_progress_chart.coffee" pinned="false" current="true" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/js/dashboard/directives/population_progress_chart.coffee">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.6275862" vertical-offset="895" max-vertical-offset="1638">
-                      <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+                    <state vertical-scroll-proportion="0.36206895" vertical-offset="846" max-vertical-offset="1656">
+                      <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
                       <folding />
                     </state>
                   </provider>
@@ -260,8 +110,8 @@
               <file leaf-file-name="home.haml" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/views/population/home.haml">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.28195488" vertical-offset="15" max-vertical-offset="288">
-                      <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+                    <state vertical-scroll-proportion="1.2" vertical-offset="0" max-vertical-offset="324">
+                      <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
                       <folding />
                     </state>
                   </provider>
@@ -281,10 +131,10 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="linechart.sass" pinned="false" current="true" current-in-tab="true">
+              <file leaf-file-name="linechart.sass" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/css/dashboard/linechart.sass">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.5592233" vertical-offset="0" max-vertical-offset="515">
+                    <state vertical-scroll-proportion="1.2050209" vertical-offset="0" max-vertical-offset="396">
                       <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
                       <folding />
                     </state>
@@ -309,8 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../rubyneat/lib/rubyneat/evolver.rb" />
-        <option value="$PROJECT_DIR$/../rubyneat/lib/rubyneat/dsl.rb" />
         <option value="$PROJECT_DIR$/../rubyneat/lib/rubyneat/evaluator.rb" />
         <option value="$PROJECT_DIR$/../rubyneat_examples/neater/invpend_neat.rb" />
         <option value="$PROJECT_DIR$/../rubyneat_examples/neater/sigdebug_neat.rb" />
@@ -332,7 +180,6 @@
         <option value="$PROJECT_DIR$/../rubyneat/rubyneat.gemspec" />
         <option value="$PROJECT_DIR$/rubyneat_dashboard.gemspec" />
         <option value="$PROJECT_DIR$/../rubyneat/Rakefile" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/../rubyneat/Gemfile" />
         <option value="$PROJECT_DIR$/Rakefile" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
@@ -340,7 +187,6 @@
         <option value="$USER_HOME$/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rubyneat_dashboard-0.4.0.alpha.1/lib/rubyneat_dashboard/main.rb" />
         <option value="$PROJECT_DIR$/README.rdoc" />
         <option value="$PROJECT_DIR$/app/js/dashboard/directives/population_progress.coffee" />
-        <option value="$PROJECT_DIR$/../rubyneat_examples/Gemfile" />
         <option value="$PROJECT_DIR$/lib/rubyneat_dashboard/bower_dsl.rb" />
         <option value="$PROJECT_DIR$/app/js/dashboard.coffee" />
         <option value="$PROJECT_DIR$/app/js/dashboard/directives/critter_phenotype_topology.coffee" />
@@ -360,6 +206,10 @@
         <option value="$PROJECT_DIR$/lib/rubyneat_dashboard.rb" />
         <option value="$PROJECT_DIR$/views/population/home.haml" />
         <option value="$PROJECT_DIR$/app/js/dashboard/directives/population_progress_chart.coffee" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/../rubyneat_examples/Gemfile" />
+        <option value="$PROJECT_DIR$/../rubyneat_examples/Gemfile.lock" />
+        <option value="$USER_HOME$/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/deep_dive-0.2.0/lib/deep_dive/deep_dive.rb" />
       </list>
     </option>
   </component>
@@ -401,6 +251,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="rubyneat_dashboard" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rubyneat_dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rubyneat_examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -634,7 +494,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../queue_ding" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../deep_dive" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="project.settings.patched" value="true" />
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyModuleStructureConfigurable" />
@@ -774,18 +634,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="-3" width="1924" height="1052" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18317358" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18317358" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31057268" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.34835166" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="923" y="511" width="74" height="30" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.34835166" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="908" y="811" width="1014" height="234" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15335463" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47692308" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47797358" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -837,62 +697,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/js/dashboard/directives/pie.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/dashboard/linechart.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="396">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/population/speciation.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="565">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/population/general.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="198">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/d3/d3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="166284">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/angular/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24418604" vertical-offset="0" max-vertical-offset="516">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/d3/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1744186" vertical-offset="0" max-vertical-offset="540">
           <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../rubyneat_examples/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6318584" vertical-offset="363" max-vertical-offset="1458">
-          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1054,6 +862,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55517244" vertical-offset="6321" max-vertical-offset="10872">
           <caret line="378" column="68" selection-start-line="378" selection-start-column="68" selection-end-line="378" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1168,7 +977,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/css/dashboard/linechart.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5592233" vertical-offset="0" max-vertical-offset="515">
+        <state vertical-scroll-proportion="1.2050209" vertical-offset="0" max-vertical-offset="396">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
@@ -1181,26 +990,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/population/home.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2" vertical-offset="0" max-vertical-offset="324">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/dashboard/services/population_service.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5181818" vertical-offset="33" max-vertical-offset="198">
+        <state vertical-scroll-proportion="1.7647059" vertical-offset="0" max-vertical-offset="198">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/population/home.haml">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28195488" vertical-offset="15" max-vertical-offset="288">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.37292817" vertical-offset="0" max-vertical-offset="724">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../rubyneat/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../rubyneat_examples/config/boot.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29834256" vertical-offset="0" max-vertical-offset="362">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bundler-1.6.3/lib/bundler/runtime.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6418338" vertical-offset="370" max-vertical-offset="5688">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../rubyneat_examples/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3313433" vertical-offset="339" max-vertical-offset="2844">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../rubyneat_examples/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0055249" vertical-offset="698" max-vertical-offset="1422">
+          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/deep_dive-0.2.0/lib/deep_dive/deep_dive.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6418338" vertical-offset="2206" max-vertical-offset="2790">
+          <caret line="135" column="18" selection-start-line="135" selection-start-column="18" selection-end-line="135" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/dashboard/directives/population_progress_chart.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6275862" vertical-offset="895" max-vertical-offset="1638">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.36206895" vertical-offset="846" max-vertical-offset="1656">
+          <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
           <folding />
         </state>
       </provider>

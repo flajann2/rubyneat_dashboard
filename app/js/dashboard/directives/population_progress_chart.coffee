@@ -33,21 +33,21 @@
     ).y((d) ->
       y d.best
     )
+
     datamessage = (data) ->
       color.domain d3.keys(data[0]).filter((key) ->
         key isnt "gen"
       )
 
-      fitness = color.domain().map((name) ->
+      fitness = color.domain().map (name) ->
         name: name
-        values: data.map((d) ->
+        values: data.map (d) ->
           gen: d.gen
           fitness: +d[name]
-        )
-      )
-      x.domain d3.extent(data, (d) ->
+
+      x.domain d3.extent data, (d) ->
         d.gen
-      )
+
       y.domain [ d3.min(labels, (c) ->
         d3.min c, (v) ->
           v.fitness
@@ -55,11 +55,12 @@
       ), d3.max(fitness, (c) ->
         d3.max c.values, (v) ->
           v.fitness
-
       ) ]
+
       svg.append("g").attr("class", "x axis").attr("transform", "translate(0," + height + ")").call xAxis
       svg.append("g").attr("class", "y axis").call(yAxis).append("text").attr("transform", "rotate(-90)").attr("y", 6).attr("dy", ".71em").style("text-anchor", "end").text "Fitness"
       fit = svg.data(fitness).enter().append("g").attr("class", "fit")
+      fit = svg.selectAll(".fit").data(fitness).enter().append("g").attr("class", "fit")
       fit.append("path").attr("class", "line").attr("d", (d) ->
         line d.values
       ).style "stroke", (d) ->
@@ -72,7 +73,7 @@
         "translate(" + x(d.value.date) + "," + y(d.value.temperature) + ")"
       ).attr("x", 3).attr("dy", ".35em").text (d) ->
         d.name
-    datamessage(data)
+    datamessage data
 
   link: link
   restrict: 'E'

@@ -13,10 +13,10 @@ gem 'eventmachine'
 gem 'queue_ding'
 
 group :development do
-  gem "rspec", "~> 2.8"
-  gem "yard", "~> 0.7"
-  gem "rdoc", "~> 3.12"
-  gem "bundler", "~> 1.0"
+  gem "rspec", "~> 2"
+  gem "yard", "~> 0"
+  gem "rdoc", "~> 3"
+  gem "bundler", "~> 1"
   gem "jeweler", "~> 2"
   gem "simplecov", ">= 0"
   gem 'semver', '~> 1'
