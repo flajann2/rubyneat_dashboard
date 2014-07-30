@@ -4,7 +4,7 @@
     <list default="true" id="a5119db3-bf80-4204-b776-1488f2dc7969" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat_examples/Gemfile.lock" afterPath="$PROJECT_DIR$/../rubyneat_examples/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat_examples/Gemfile" afterPath="$PROJECT_DIR$/../rubyneat_examples/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/dashboard/directives/population_progress_chart.coffee" afterPath="$PROJECT_DIR$/app/js/dashboard/directives/population_progress_chart.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/population/home.haml" afterPath="$PROJECT_DIR$/views/population/home.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/.idea/rubyneat.iml" afterPath="$PROJECT_DIR$/../rubyneat/.idea/rubyneat.iml" />
     </list>
     <ignored path="rubyneat_dashboard.iws" />
@@ -18,7 +18,7 @@
   <component name="ChangesViewManager" flattened_view="false" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/rubyneat_dashboard@Dashboard_Rspec.coverage" NAME="Dashboard Rspec Coverage Results" MODIFIED="1405872950818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="rubyneat_dashboard" />
-    <SUITE FILE_PATH="coverage/rubyneat_dashboard@NEATxor.coverage" NAME="NEATxor Coverage Results" MODIFIED="1406722348523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../rubyneat_examples" MODULE_NAME="rubyneat_examples" />
+    <SUITE FILE_PATH="coverage/rubyneat_dashboard@NEATxor.coverage" NAME="NEATxor Coverage Results" MODIFIED="1406722569720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../rubyneat_examples" MODULE_NAME="rubyneat_examples" />
     <SUITE FILE_PATH="coverage/rubyneat_dashboard@Dashboard.coverage" NAME="Dashboard Coverage Results" MODIFIED="1403433407871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rubyneat_dashboard" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -34,13 +34,13 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.48994976">
       <split-first>
-        <splitter split-orientation="vertical" split-proportion="0.16703297">
+        <splitter split-orientation="vertical" split-proportion="0.34030837">
           <split-first>
             <leaf>
               <file leaf-file-name="population_service.coffee" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/js/dashboard/services/population_service.coffee">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.73170733" vertical-offset="0" max-vertical-offset="198">
+                    <state vertical-scroll-proportion="0.3202847" vertical-offset="0" max-vertical-offset="281">
                       <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
                       <folding />
                     </state>
@@ -61,10 +61,10 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="population_progress_chart.coffee" pinned="false" current="true" current-in-tab="true">
+              <file leaf-file-name="population_progress_chart.coffee" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/js/dashboard/directives/population_progress_chart.coffee">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.40620592" vertical-offset="702" max-vertical-offset="1620">
+                    <state vertical-scroll-proportion="0.5217391" vertical-offset="702" max-vertical-offset="1620">
                       <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
                       <folding />
                     </state>
@@ -99,11 +99,11 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="home.haml" pinned="false" current="false" current-in-tab="true">
+              <file leaf-file-name="home.haml" pinned="false" current="true" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/views/population/home.haml">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.4754717" vertical-offset="0" max-vertical-offset="324">
-                      <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+                    <state vertical-scroll-proportion="0.6792453" vertical-offset="0" max-vertical-offset="288">
+                      <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
@@ -196,12 +196,12 @@
         <option value="$PROJECT_DIR$/app/js/dashboard/directives/pie.coffee" />
         <option value="$PROJECT_DIR$/app/css/dashboard/linechart.sass" />
         <option value="$PROJECT_DIR$/lib/rubyneat_dashboard.rb" />
-        <option value="$PROJECT_DIR$/views/population/home.haml" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/../rubyneat_examples/Gemfile" />
         <option value="$PROJECT_DIR$/../rubyneat_examples/Gemfile.lock" />
         <option value="$USER_HOME$/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/deep_dive-0.2.0/lib/deep_dive/deep_dive.rb" />
         <option value="$PROJECT_DIR$/app/js/dashboard/directives/population_progress_chart.coffee" />
+        <option value="$PROJECT_DIR$/views/population/home.haml" />
       </list>
     </option>
   </component>
@@ -633,7 +633,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31057268" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.34835166" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="908" y="811" width="1014" height="234" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.34835166" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="908" y="811" width="1014" height="234" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15335463" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -864,6 +864,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -977,22 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/population/home.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4754717" vertical-offset="0" max-vertical-offset="324">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/dashboard/services/population_service.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73170733" vertical-offset="0" max-vertical-offset="198">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37292817" vertical-offset="0" max-vertical-offset="724">
@@ -1051,8 +1036,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/dashboard/directives/population_progress_chart.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40620592" vertical-offset="702" max-vertical-offset="1620">
+        <state vertical-scroll-proportion="0.5217391" vertical-offset="702" max-vertical-offset="1620">
           <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/dashboard/services/population_service.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3202847" vertical-offset="0" max-vertical-offset="281">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/population/home.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6792453" vertical-offset="0" max-vertical-offset="288">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
