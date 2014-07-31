@@ -1,14 +1,12 @@
 @DashboardApp.directive 'populationProgressChart', ->
   link = (scope, el, attr) ->
-    console.log('populationProgressChart' +
-        ' width=' + scope.width +
-        ' height=' + scope.height +
-        ' data=' + scope.data)
     color  = scope.color || d3.scale.category10()
-    data   = scope.data
     width  = scope.width || 500
     height = scope.height || 300
     labels = scope.labels || ['alpha']
+    basis  = scope.basis || 'generation'
+    xname = scope.xAxisName || '*Generations*'
+    yname = scope.yAxisName || '*Fitness*'
 
     margin =
       top: 20
@@ -34,18 +32,16 @@
     )
 
     datamessage = (data) ->
-      color.domain d3.keys(data[0]).filter((key) ->
-        key isnt "gen"
-      )
+      color.domain labels
 
       fitness = color.domain().map (name) ->
         name: name
         values: data.map (d) ->
-          gen: d.gen
+          gen: d[basis]
           fitness: +d[name]
 
       x.domain d3.extent data, (d) ->
-        d.gen
+        d[basis]
 
       y.domain [ d3.min(fitness, (c) ->
         d3.min c.values, (v) ->
@@ -56,8 +52,15 @@
           v.fitness
       ) ]
 
-      svg.append("g").attr("class", "x axis").attr("transform", "translate(0," + height + ")").call xAxis
-      svg.append("g").attr("class", "y axis").call(yAxis).append("text").attr("transform", "rotate(-90)").attr("y", 6).attr("dy", ".71em").style("text-anchor", "end").text "Fitness"
+      svg.append("g").attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call xAxis
+
+      svg.append("g").attr("class", "y axis")
+        .call(yAxis).append("text").attr("transform", "rotate(-90)")
+        .attr("y", 6).attr("dy", ".71em")
+        .style("text-anchor", "end").text yname
+
       fit = svg.selectAll(".fit").data(fitness).enter().append("g").attr("class", "fit")
       fit.append("path").attr("class", "line").attr("d", (d) ->
         line d.values
@@ -71,14 +74,22 @@
         "translate(" + x(d.value.gen) + "," + y(d.value.fitness) + ")"
       ).attr("x", 3).attr("dy", ".35em").text (d) ->
         d.name
-    datamessage data
+      scope.$watch 'datum', (datum) ->
+        console.log datum
+      , true
+
+    datamessage scope.data
 
   link: link
   restrict: 'E'
   template: '<div></div>'
   scope:
-    width:    '='
-    height:   '='
-    data:     '='
-    color:    '='
-    labels:   '='
+    width:      '='
+    height:     '='
+    data:       '='
+    datum:      '='
+    color:      '='
+    labels:     '='
+    basis:      '='
+    xAxisName:  '@'
+    yAxisName:  '@'

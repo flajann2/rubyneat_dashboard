@@ -1,10 +1,28 @@
 %h1 Population Home
 .pop(ng-controller = 'PopulationController' ng-init = "init()")
   .charting
-    %population-progress-chart(data = "[{gen: 1, best: 1.0, ave: 0.5, worst: 0.0},{gen: 2, best: 2.0, ave: 0.6, worst: 0.5},{gen: 3, best: 3.0, ave: 1.0, worst: 0.5},{gen: 4, best: 3.0, ave: 2.5, worst: 1.0},{gen: 5, best: 4.0, ave: 2.5, worst: 1.0},{gen: 6, best: 4.0, ave: 2.5, worst: 1.5}]"
-      labels = "['best', 'worst', 'ave']"
-      width = "560"
+    %population-progress-chart(labels = "['best', 'worst', 'overall']"
+      basis = "'generation'"
+      width = "800"
       height = "400"
+      x-axis-name = "Generations"
+      y-axis-name = "Fitness"
+      data = "entries"
+      datum = "entry"
     )
-  .entries
-    The entries are {{ entries }}
+  .current
+    %h2 Realtime Status
+    %table
+      %tr
+        %td generation
+        %td {{ entry.generation }}
+      %tr
+        %td best
+        %td {{ entry.best }}
+      %tr
+        %td worst
+        %td {{ entry.worst }}
+      %tr
+        %td overall
+        %td {{ entry.overall }}
+
