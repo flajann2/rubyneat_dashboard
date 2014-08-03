@@ -41,12 +41,16 @@ module Dashboard
           list = []
           app.get '/population', provides: 'text/event-stream' do
             stream(:keep_open) do |out|
-              loop {
-                mess = Dashboard.dq.population.shift
-                payload = wrap_for_sending payload: mess
-                puts payload
-                out << payload
-              }
+              Thread.new do
+                  loop {
+                    # FIXME: Currently if more than one browser attaches,
+                    # FIXME: the messages are split between them. We need
+                    # FIXME: more of a tee interface, which we can
+                    # FIXME: extend queue_ding to do automatically.
+                    payload = wrap_for_sending payload: Dashboard.dq.population.next
+                    out << payload
+                  }
+                end
               list << out
               puts list.count
               out.callback {
