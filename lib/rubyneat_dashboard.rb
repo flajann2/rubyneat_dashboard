@@ -29,6 +29,7 @@ module Dashboard
     configure do
       set port: 3912
       set static: true
+      set :bind, '0.0.0.0' #all interfaces
       use Rack::CommonLogger, $log = ::Logger.new(::File.new('log/dashboard.log', 'a+'))
       $log.debug "Started Dashboard at #{Time.now}"
       Barista.add_preamble do |location|
