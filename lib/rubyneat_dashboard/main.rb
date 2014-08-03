@@ -42,7 +42,8 @@ module Dashboard
           app.get '/population', provides: 'text/event-stream' do
             stream(:keep_open) do |out|
               loop {
-                payload = wrap_for_sending payload: Dashboard.dq.population.pop
+                mess = Dashboard.dq.population.shift
+                payload = wrap_for_sending payload: mess
                 puts payload
                 out << payload
               }

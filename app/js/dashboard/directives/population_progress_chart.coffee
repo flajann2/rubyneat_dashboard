@@ -111,8 +111,12 @@
 
         scope.paths.append("text")
           .datum((name) ->
+              d = fitness[name]
               name: name
-              value: fitness[name].values[fitness[name].values.length - 1]
+              value:  if d.values.length > 0
+                        d.values[d.values.length - 1]
+                      else
+                        0
             )
           .attr("transform", (d) ->
               "translate(" + x(d.value.gen) + "," + y(d.value.fitness) + ")"
