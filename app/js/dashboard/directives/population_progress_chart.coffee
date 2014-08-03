@@ -5,8 +5,8 @@
     height = scope.height || 300
     labels = scope.labels || ['alpha']
     basis  = scope.basis || 'generation'
-    xname = scope.xAxisName || '*Generations*'
-    yname = scope.yAxisName || '*Fitness*'
+    xname  = scope.xaxisName || '**Generations**'
+    yname  = scope.yaxisName || '**Fitness**'
 
     margin =
       top: 20
@@ -41,16 +41,27 @@
       )
 
       color.domain labels
-      gxAxix = svg.append("g").attr("class", "x axis")
+      gxAxix = svg.append("g")
+        .attr("class", "x axis")
         .attr("transform", "translate(0," + height + ")")
-      gyAxis = svg.append("g").attr("class", "y axis")
+      gyAxis = svg.append("g")
+        .attr("class", "y axis")
 
-      update_fitness = ->
-        color.domain().map (name) ->
-          name: name
-          values: data.map (d) ->
-            gen: d[basis]
-            fitness: +d[name]
+      update_fitness = (tick = null) ->
+        unless tick
+          scope.fitness = color.domain().map (name) ->
+            name: name
+            values: data.map (d) ->
+              gen: d[basis]
+              fitness: +d[name]
+        else
+          scope.fitness.map (d) ->
+            d.values.push {
+              gen: tick.generation
+              fitness: tick[d.name]
+            }
+          scope.fitness
+
 
       update_domains = (fitness) ->
         x.domain d3.extent data, (d) ->
@@ -66,16 +77,16 @@
 
       update_axes = ->
         gxAxix.call(xAxis)
-        .append("text").attr("transform", "translate(" + width / 2 + "," + 30 + ")")
-        .attr("x", 6).attr("dx", ".9em")
-        .style("text-anchor", "end").text xname
+          .append("text").attr("transform", "translate(" + width / 2 + "," + 30 + ")")
+          .attr("x", 6).attr("dx", ".9em")
+          .style("text-anchor", "end").text xname
 
         gyAxis.call(yAxis)
-        .append("text").attr("transform", "rotate(-90)")
-        .attr("y", 6).attr("dy", ".9em")
-        .style("text-anchor", "end").text yname
+          .append("text").attr("transform", "rotate(-90)")
+          .attr("y", 6).attr("dy", ".9em")
+          .style("text-anchor", "end").text yname
 
-      render = (data) ->
+      render_all = (data) ->
         fitness = update_fitness()
         update_domains(fitness)
         update_axes()
@@ -101,12 +112,22 @@
           .text (d) ->
             d.name
 
-      render(data)
+      update_paths = (fitness) ->
+        p = scope.paths.selectAll("line")
+        #p.data(fitness).enter().append("g").attr("class", "fit")
+        p.enter().append("path").attr("class", "line")
+          .attr("d", (d) ->
+            line d.values
+          ).style "stroke", (d) ->
+            color d.name
+
+      render_all data
 
       render_tick = (tick) ->
-        fitness = update_fitness()
+        fitness = update_fitness(tick)
         update_domains(fitness)
         update_axes()
+        update_paths(fitness)
 
       scope.$watch 'tickSource', (tick) ->
         render_tick(tick)
@@ -125,5 +146,5 @@
     color:      '='
     labels:     '='
     basis:      '='
-    xAxisName:  '@'
-    yAxisName:  '@'
+    xaxisName:    '@'
+    yaxisName:    '@'
