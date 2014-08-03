@@ -3,6 +3,9 @@
 This is a RubyNEAT Plugin to allow you to access RubyNEAT while running
 to see stats, etc.
 
+== Gem Version
+{<img src="https://badge.fury.io/rb/rubyneat_dashboard.png" alt="Gem Version" />}[http://badge.fury.io/rb/rubyneat_dashboard]
+
 == Installation
 In your Neater project, just include this in your Gemfile
 

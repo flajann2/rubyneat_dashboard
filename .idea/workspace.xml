@@ -2,80 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5119db3-bf80-4204-b776-1488f2dc7969" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/cli/templates/generate/.irbrc.tt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../rubyneat/.irbrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../rubyneat/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../rubyneat/.idea/.rakeTasks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../rubyneat/.ruby-version" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../rubyneat/.idea/runConfigurations/Dashboard.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/cli/console.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../rubyneat/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../rubyneat/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../rubyneat/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/reporting.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../rubyneat/.idea/rubyneat.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../rubyneat/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../rubyneat/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../rubyneat/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/.yardoc/objects/root.dat" afterPath="$PROJECT_DIR$/../rubyneat/.yardoc/objects/root.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/.gitignore" afterPath="$PROJECT_DIR$/../rubyneat/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/.semver" afterPath="$PROJECT_DIR$/../rubyneat/.semver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/BasicNeuronTypes.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/BasicNeuronTypes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/BasicNeuronTypes/BiasNeuron.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/BasicNeuronTypes/BiasNeuron.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Controller.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Controller.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/BasicNeuronTypes/CosineNeuron.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/BasicNeuronTypes/CosineNeuron.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Critter.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Critter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Evolver/CritterOp.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Evolver/CritterOp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/DSL.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/DSL.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Graph/DependencyResolver.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Graph/DependencyResolver.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Evaluator.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Evaluator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Evolver.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Evolver.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Expressor.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Expressor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/Gemfile.lock" afterPath="$PROJECT_DIR$/../rubyneat/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/Gemfile" afterPath="$PROJECT_DIR$/../rubyneat/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Critter/Genotype/Gene.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Critter/Genotype/Gene.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Critter/Genotype.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Critter/Genotype.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Graph.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Graph.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Graph/GraphException.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Graph/GraphException.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/BasicNeuronTypes/InputNeuron.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/BasicNeuronTypes/InputNeuron.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/NeatException.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/NeatException.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/NeatOb.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/NeatOb.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Controller/NeatSettings.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Controller/NeatSettings.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Neuron.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Neuron.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Operator.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Operator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Critter/Phenotype.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Critter/Phenotype.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Population.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Population.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/README.md" afterPath="$PROJECT_DIR$/../rubyneat/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/Rakefile" afterPath="$PROJECT_DIR$/../rubyneat/Rakefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/BasicNeuronTypes/SigmoidNeuron.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/BasicNeuronTypes/SigmoidNeuron.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/BasicNeuronTypes/SineNeuron.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/BasicNeuronTypes/SineNeuron.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/BasicNeuronTypes/TanhNeuron.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/BasicNeuronTypes/TanhNeuron.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Trait.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/NEAT/Trait.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/_index.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/_index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/.yardoc/checksums" afterPath="$PROJECT_DIR$/../rubyneat/.yardoc/checksums" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/class_list.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/class_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/cli.rb" afterPath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/cli.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/critter.rb" afterPath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/critter.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rdoc" afterPath="$PROJECT_DIR$/README.rdoc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../deep_dive/.idea/deep_dive.iml" afterPath="$PROJECT_DIR$/../deep_dive/.idea/deep_dive.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/default_neat.rb" afterPath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/default_neat.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/dsl.rb" afterPath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/dsl.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/evaluator.rb" afterPath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/evaluator.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/evolver.rb" afterPath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/evolver.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/expressor.rb" afterPath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/expressor.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/file_list.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/file_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/index.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/cli/main.rb" afterPath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/cli/main.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/method_list.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/method_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/neuron.rb" afterPath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/neuron.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/.yardoc/object_types" afterPath="$PROJECT_DIR$/../rubyneat/.yardoc/object_types" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/population.rb" afterPath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/population.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/rubyneat.gemspec" afterPath="$PROJECT_DIR$/../rubyneat/rubyneat.gemspec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/lib/rubyneat.rb" afterPath="$PROJECT_DIR$/../rubyneat/lib/rubyneat.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/rubyneat.rb" afterPath="$PROJECT_DIR$/../rubyneat/lib/rubyneat/rubyneat.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/rubyneat_dashboard.iml" afterPath="$PROJECT_DIR$/.idea/rubyneat_dashboard.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rubyneat/doc/top-level-namespace.html" afterPath="$PROJECT_DIR$/../rubyneat/doc/top-level-namespace.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="rubyneat_dashboard.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -105,21 +33,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.48994976">
       <split-first>
         <leaf>
-          <file leaf-file-name="main.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/rubyneat_dashboard/main.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="487" max-vertical-offset="1368">
-                  <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="xor_neat.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/../rubyneat_examples/neater/xor_neat.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3986175" vertical-offset="1760" max-vertical-offset="2700">
-                  <caret line="117" column="8" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
+                <state vertical-scroll-proportion="0.2327189" vertical-offset="626" max-vertical-offset="2700">
+                  <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -159,11 +77,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="xoranalog_neat.rb" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="xoranalog_neat.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/../rubyneat_examples/neater/xoranalog_neat.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.19124424" vertical-offset="1796" max-vertical-offset="2664">
+                <state vertical-scroll-proportion="0.0" vertical-offset="1796" max-vertical-offset="2664">
                   <caret line="109" column="68" selection-start-line="109" selection-start-column="68" selection-end-line="109" selection-end-column="68" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="README.rdoc" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/README.rdoc">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.10368664" vertical-offset="0" max-vertical-offset="1728">
+                  <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -180,7 +108,7 @@
   </component>
   <component name="Git.Settings">
     <option name="SYNC_SETTING" value="DONT" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../rubyneat_examples" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -208,7 +136,6 @@
         <option value="$PROJECT_DIR$/Rakefile" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$USER_HOME$/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/rubyneat_dashboard-0.4.0.alpha.1/lib/rubyneat_dashboard/main.rb" />
-        <option value="$PROJECT_DIR$/README.rdoc" />
         <option value="$PROJECT_DIR$/app/js/dashboard/directives/population_progress.coffee" />
         <option value="$PROJECT_DIR$/lib/rubyneat_dashboard/bower_dsl.rb" />
         <option value="$PROJECT_DIR$/app/js/dashboard/directives/critter_phenotype_topology.coffee" />
@@ -236,6 +163,7 @@
         <option value="$PROJECT_DIR$/../rubyneat_examples/neater/xor_neat.rb" />
         <option value="$PROJECT_DIR$/../rubyneat_examples/neater/xorsin_neat.rb" />
         <option value="$PROJECT_DIR$/../rubyneat_examples/neater/xoranalog_neat.rb" />
+        <option value="$PROJECT_DIR$/README.rdoc" />
       </list>
     </option>
   </component>
@@ -286,6 +214,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="rubyneat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rubyneat_dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="rubyneat_dashboard" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -296,7 +234,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../queue_ding" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../deep_dive" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="project.settings.patched" value="true" />
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyModuleStructureConfigurable" />
@@ -494,13 +432,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bower_components/foundation/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="492">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/underscore/.bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.111827955" vertical-offset="2" max-vertical-offset="684">
@@ -750,13 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.rdoc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1674">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript5.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33295584" vertical-offset="516" max-vertical-offset="3438">
@@ -805,14 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/rubyneat_dashboard/main.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="487" max-vertical-offset="1368">
-          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/css/dashboard/linechart.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.56031126" vertical-offset="0" max-vertical-offset="514">
@@ -853,18 +769,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../rubyneat_examples/neater/xor_neat.rb">
+    <entry file="file://$PROJECT_DIR$/../rubyneat_examples/neater/xoranalog_neat.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3986175" vertical-offset="1760" max-vertical-offset="2700">
-          <caret line="117" column="8" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1796" max-vertical-offset="2664">
+          <caret line="109" column="68" selection-start-line="109" selection-start-column="68" selection-end-line="109" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../rubyneat_examples/neater/xoranalog_neat.rb">
+    <entry file="file://$PROJECT_DIR$/../rubyneat/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19124424" vertical-offset="1796" max-vertical-offset="2664">
-          <caret line="109" column="68" selection-start-line="109" selection-start-column="68" selection-end-line="109" selection-end-column="68" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1854">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/rubyneat_dashboard/main.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0419977" vertical-offset="0" max-vertical-offset="1368">
+          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../rubyneat_examples/neater/xor_neat.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2327189" vertical-offset="626" max-vertical-offset="2700">
+          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.rdoc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10368664" vertical-offset="0" max-vertical-offset="1728">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
