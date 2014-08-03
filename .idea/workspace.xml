@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5119db3-bf80-4204-b776-1488f2dc7969" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rdoc" afterPath="$PROJECT_DIR$/README.rdoc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../deep_dive/.idea/deep_dive.iml" afterPath="$PROJECT_DIR$/../deep_dive/.idea/deep_dive.iml" />
     </list>
     <ignored path="rubyneat_dashboard.iws" />
@@ -87,13 +86,26 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="README.rdoc" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="README.rdoc" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/README.rdoc">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.10368664" vertical-offset="0" max-vertical-offset="1728">
-                  <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1728">
+                  <caret line="7" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
                   <folding />
                 </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/../rubyneat/README.md">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.30731708" vertical-offset="0" max-vertical-offset="1962">
+                  <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+              <provider editor-type-id="MarkdownPreviewEditor">
+                <state />
               </provider>
             </entry>
           </file>
@@ -108,7 +120,7 @@
   </component>
   <component name="Git.Settings">
     <option name="SYNC_SETTING" value="DONT" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../rubyneat" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -117,7 +129,6 @@
         <option value="$PROJECT_DIR$/../rubyneat_examples/neater/invpend_neat.rb" />
         <option value="$PROJECT_DIR$/../rubyneat_examples/neater/sigdebug_neat.rb" />
         <option value="$PROJECT_DIR$/../rubyneat_examples/neater/xorall_neat.rb" />
-        <option value="$PROJECT_DIR$/../rubyneat/README.md" />
         <option value="$PROJECT_DIR$/../rubyneat/lib/rubyneat/cli/main.rb" />
         <option value="$PROJECT_DIR$/views/home.haml" />
         <option value="$PROJECT_DIR$/app/js/dashboard/population_socket_controller.coffee" />
@@ -164,6 +175,7 @@
         <option value="$PROJECT_DIR$/../rubyneat_examples/neater/xorsin_neat.rb" />
         <option value="$PROJECT_DIR$/../rubyneat_examples/neater/xoranalog_neat.rb" />
         <option value="$PROJECT_DIR$/README.rdoc" />
+        <option value="$PROJECT_DIR$/../rubyneat/README.md" />
       </list>
     </option>
   </component>
@@ -777,17 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../rubyneat/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1854">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/rubyneat_dashboard/main.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0419977" vertical-offset="0" max-vertical-offset="1368">
@@ -806,10 +807,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.rdoc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10368664" vertical-offset="0" max-vertical-offset="1728">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1728">
+          <caret line="7" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../rubyneat/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30731708" vertical-offset="0" max-vertical-offset="1962">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
