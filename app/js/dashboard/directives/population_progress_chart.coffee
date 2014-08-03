@@ -35,10 +35,10 @@
       yAxis = d3.svg.axis().scale(y).orient("left")
 
       line = d3.svg.line().interpolate("linear").x((d) ->
-        x d.gen
-      ).y((d) ->
-        y d.fitness
-      )
+          x d.gen
+        ).y((d) ->
+          y d.fitness
+        )
 
       color.domain labels
       gxAxix = svg.append("g")
@@ -54,24 +54,24 @@
             values: data.map (d) ->
               gen: d[basis]
               fitness: +d[name]
+          scope.fitness = scope.fitness.toDict('name')
         else
-          scope.fitness.map (d) ->
-            d.values.push {
+          labels.map (name) ->
+            scope.fitness[name].values.push {
               gen: tick.generation
-              fitness: tick[d.name]
+              fitness: tick[name]
             }
-          scope.fitness
-
+        scope.fitness
 
       update_domains = (fitness) ->
         x.domain d3.extent data, (d) ->
           d[basis]
 
-        y.domain [ d3.min(fitness, (c) ->
-          d3.min c.values, (v) ->
+        y.domain [ d3.min(labels, (c) ->
+          d3.min fitness[c].values, (v) ->
             v.fitness
-        ), d3.max(fitness, (c) ->
-          d3.max c.values, (v) ->
+        ), d3.max(labels, (c) ->
+          d3.max fitness[c].values, (v) ->
             v.fitness
         ) ]
 
@@ -92,34 +92,52 @@
         update_axes()
 
         scope.paths = svg.selectAll(".fit")
-          .data(fitness)
-          .enter().append("g").attr("class", "fit")
+          .data(labels)
+            .enter().append("g").attr("class", "fit")
+            .attr("name", (name) ->
+                name
+              )
 
-        scope.paths.append("path").attr("class", "line")
-          .attr("d", (d) ->
-              line d.values
-            ).style "stroke", (d) ->
-              color d.name
+        scope.paths.append("path")
+          .attr("class", "line")
+          .attr("name", (d) ->
+              d.name
+            )
+          .attr("d", (name) ->
+              line fitness[name].values
+            )
+          .style "stroke", (name) ->
+              color name
 
         scope.paths.append("text")
-          .datum((d) ->
-              name: d.name
-              value: d.values[d.values.length - 1]
+          .datum((name) ->
+              name: name
+              value: fitness[name].values[fitness[name].values.length - 1]
             )
           .attr("transform", (d) ->
               "translate(" + x(d.value.gen) + "," + y(d.value.fitness) + ")"
             ).attr("x", 3).attr("dy", ".35em")
-          .text (d) ->
-            d.name
+          .text (name) ->
+            name
 
       update_paths = (fitness) ->
-        p = scope.paths.selectAll("line")
-        #p.data(fitness).enter().append("g").attr("class", "fit")
-        p.enter().append("path").attr("class", "line")
-          .attr("d", (d) ->
-            line d.values
-          ).style "stroke", (d) ->
-            color d.name
+        p = scope.paths.selectAll("path")
+        p.attr("d", (name) ->
+            line fitness[name].values
+          ).style "stroke", (name) ->
+            color name
+
+        t = scope.paths.selectAll("text")
+        t.datum((last) ->
+            d = fitness[last.name]
+            name: d.name
+            value: d.values[d.values.length - 1]
+          ).attr("transform", (d) ->
+            "translate(" + x(d.value.gen) + "," + y(d.value.fitness) + ")"
+          ).attr("x", 3).attr("dy", ".35em").text (d) ->
+            d.name
+
+
 
       render_all data
 
@@ -130,7 +148,7 @@
         update_paths(fitness)
 
       scope.$watch 'tickSource', (tick) ->
-        render_tick(tick)
+        render_tick(tick) if tick.generation
       , true
 
     datamessage scope.data
@@ -146,5 +164,5 @@
     color:      '='
     labels:     '='
     basis:      '='
-    xaxisName:    '@'
-    yaxisName:    '@'
+    xaxisName:  '@'
+    yaxisName:  '@'

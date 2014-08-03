@@ -32,3 +32,9 @@
       controller:  'CrittersController'
     ).otherwise redirectTo: "/"
   ]
+
+Array::toDict = (key) ->
+  @reduce ( (dict, obj) ->
+      dict[ obj[key] ] = obj if obj[key]?
+      dict
+    ), {}
