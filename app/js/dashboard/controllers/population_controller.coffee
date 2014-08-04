@@ -5,6 +5,10 @@
     populationService.getMessages (message) ->
         $scope.$apply ->
           p = message.payload
+          len = $scope.entries.length
+          if (len > 0) && (p.generation < $scope.entries[len - 1].generation)
+            $scope.entries = []
+
           $scope.entry = {
             generation: p.generation
             best: p.fitness.best

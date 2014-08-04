@@ -38,6 +38,24 @@ what internal standards I set for myelf in the code. I make no promises here, as
 is basically my own scratchpad. That which is more formalized shall find itself migrating
 above this section. :D
 
+=== Current Plans
+
+I want to create visulaizations of the populations and critters,
+including the ability to interact with a critter, that is to say
+being able to manipulate its input layer to see what its output
+layer does, as well as the hidden activations.
+
+We also need to work on a way to do persistence of these critters.
+Currently, there is no persistence to speak of, nor is there a clean
+way to save the results. All of this remains highly experimental at
+the moment.
+
+Also with persistence comes the means to extract the most fit critters
+so that they can be used in production. Ideally, there should be some
+means to do continuous updates. We should be able to churn out standalone
+code in "any" language, as well as having a minimal engine to run them
+directly.
+
 === D3 Directive Conventions
 
 Becuse I expect there to be a large number of directives defined here, especially for
@@ -54,7 +72,7 @@ firm them up as I move along here. But every effort will be used to avoid hard-c
 sources unless it makes sense. At worse, there may be a default datasource that can
 be overriden.
 
-==== Naming Convention
+==== Naming Conventions (work ib progress)
 
 Basically, the naming convention shall be:
 
@@ -83,8 +101,20 @@ The former would simply be a list of connections and their innovation numbers,
 the latter would actually be a connected graph of the neurons and perhaps
 their weights.
 
-==== Directives defined so far
+==== Active Directives
+They are most likely still under development, but you
+can see them now.
 
  <population-progress-chart>
+
+==== Upcoming Directives
+
+ <population-bridage>
+ <population-window>
+ <critter-sandbox>
+ <critter-ice>
+
+==== Defunkt Directives that may be deleted
+
  <critter-genotype-topology>
  <critter-phenotype-topology>

@@ -27,14 +27,15 @@ module Dashboard
     register BowerDSL
 
     configure do
-      set port: 3912
+      set port: 3912 #TODO: Make this configurable from the DSL
       set static: true
-      set :bind, '0.0.0.0' #all interfaces
+      set :bind, '0.0.0.0' #TODO: Make this configurable from the DSL
       use Rack::CommonLogger, $log = ::Logger.new(::File.new('log/dashboard.log', 'a+'))
       $log.debug "Started Dashboard at #{Time.now}"
       Barista.add_preamble do |location|
         %{
-          /* DO NOT MODIFY -- compiled from #{location}
+          /* RubyNEAT Dashboard Generated -- compiled from #{location}
+           * DO NOT MODIFY
            */
         }
       end

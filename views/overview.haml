@@ -1,6 +1,28 @@
-%h1 Overview
-
-%pie(data = "[2,1,6,4]")
-  Wheeeee!
-
-
+%h3 Population Progress Overview
+.pop(ng-controller = 'PopulationController' ng-init = "init()")
+  .charting
+    %population-progress-chart(labels = "['best', 'worst', 'overall']"
+      basis = "'generation'"
+      width = "900"
+      height = "400"
+      xaxis-name = "Generation"
+      yaxis-name = "Fitness"
+      data = "entries"
+      tick-source = "entry"
+    )
+  .current
+    %h3 Realtime Status
+    .realtime
+      %table
+        %tr
+          %td generation
+          %td {{ entry.generation | number:0 }}
+        %tr
+          %td best
+          %td {{ entry.best | number:4 }}
+        %tr
+          %td worst
+          %td {{ entry.worst | number:4 }}
+        %tr
+          %td overall
+          %td {{ entry.overall | number:4 }}
