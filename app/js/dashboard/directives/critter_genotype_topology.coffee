@@ -1,4 +1,4 @@
-@DashboardApp.directive 'critter-genotype-topology', ->
+@DashboardApp.directive 'critterGenotypeTopology', ->
   link = (scope, element, attr) ->
 
     # put D3 code here
