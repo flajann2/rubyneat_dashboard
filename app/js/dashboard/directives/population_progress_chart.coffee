@@ -7,6 +7,7 @@
     basis  = scope.basis || 'generation'
     xname  = scope.xaxisName || '**Generations**'
     yname  = scope.yaxisName || '**Fitness**'
+    data   = scope.data || []
 
     margin =
       top: 20
@@ -64,8 +65,8 @@
         scope.fitness
 
       update_domains = (fitness) ->
-        x.domain d3.extent data, (d) ->
-          d[basis]
+        x.domain d3.extent fitness[labels[0]].values, (d) ->
+          d.gen
 
         y.domain [ d3.min(labels, (c) ->
           d3.min fitness[c].values, (v) ->
@@ -155,7 +156,7 @@
         render_tick(tick) if tick.generation
       , true
 
-    datamessage scope.data
+    datamessage data
 
   link: link
   restrict: 'E'

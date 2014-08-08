@@ -1,13 +1,9 @@
-@PopulationController = ($scope, populationService) ->
+@PopulationController = ($scope, $timeout, populationHistoryService) ->
   $scope.init = ->
     $scope.entry = {}
-    $scope.entries = []
-    populationService.getMessages (message) ->
-        $scope.$apply ->
+    populationHistoryService.getMessages (message) ->
+        $timeout ->
           p = message.payload
-          len = $scope.entries.length
-          if (len > 0) && (p.generation < $scope.entries[len - 1].generation)
-            $scope.entries = []
 
           $scope.entry = {
             generation: p.generation
@@ -17,4 +13,4 @@
             worst: p.fitness.worst
             worst_name: p.fitness.worst_name
           }
-          $scope.entries.push $scope.entry
+        , 0, true
