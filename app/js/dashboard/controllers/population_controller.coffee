@@ -7,6 +7,7 @@
 
           $scope.entry = {
             generation: p.generation
+            pop_name: p.pop_name
             best: p.fitness.best
             best_name: p.fitness.best_name
             overall: p.fitness.overall

@@ -1,5 +1,10 @@
+%h3 Population Drilldown
+.pop(ng-controller = 'PopulationController' ng-init = "init()")
+  .pop-brigade
+    %population-brigade(tick-source = "entry" number-of-pops = "20")
+      Wheeeee!
+  .pop-window
+    %population-window()
 
-%h1 Population Drilldown
-
-%population-brigade(data = "[2,1,6,4]")
-  Wheeeee!
+  .pop-sandbox
+    %critterSandbox()
