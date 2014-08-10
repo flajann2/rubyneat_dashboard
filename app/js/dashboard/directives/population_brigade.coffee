@@ -49,9 +49,9 @@
         .attr("transform", "translate(#{icon.width / 2}, #{icon.height - icon.bottom}) rotate(-90)")
       g
 
-    popboxes.push new_popbox(0, "many")
-    popboxes.push new_popbox(1, "moe")
-    popboxes.push new_popbox(2, "jack")
+    popboxes.unshift new_popbox(0, "many")
+    popboxes.unshift new_popbox(1, "moe")
+    popboxes.unshift new_popbox(2, "jack")
 
     scope.$watch 'tickSource', (tick) ->
       update_brigade tick
