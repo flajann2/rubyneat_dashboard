@@ -32,26 +32,27 @@
       .append('g')
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
-    popboxes = []
+    data = []
 
-    update_brigade = (tick) ->
-      console.log tick
-
-    new_popbox = (i, name) ->
-      g = svg.append("g")
-        .attr("transform", "translate(#{range.x(i)}, #{0})")
+    popbox_update = (tick) ->
+      data.unshift tick
+      console.log data
+      g = svg.selectAll("g").data(data).enter().append("g")
+        .attr("transform", (d) ->
+          "translate(#{range.x(data.indexOf(d))}, #{0})"
+        )
 
       g.append("image")
         .attr("xlink:href", icon.uri)
         .attr("width", icon.width)
         .attr("height", icon.height)
-      g.append("text").text(name)
+      g.append("text").text( (d)->
+          d.generation
+        )
         .attr("transform", "translate(#{icon.width / 2}, #{icon.height - icon.bottom}) rotate(-90)")
-      g
 
-    popboxes.unshift new_popbox(0, "many")
-    popboxes.unshift new_popbox(1, "moe")
-    popboxes.unshift new_popbox(2, "jack")
+    update_brigade = (tick) ->
+      popbox_update tick
 
     scope.$watch 'tickSource', (tick) ->
       update_brigade tick

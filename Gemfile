@@ -1,6 +1,6 @@
-source "http://rubygems.org"
+source "https://rubygems.org"
 
-gem 'sinatra', '~> 1'
+gem 'sinatra'#, '~> 1'
 gem 'sinatra-assetpack'
 gem 'sinatra-contrib'
 gem 'thin'
