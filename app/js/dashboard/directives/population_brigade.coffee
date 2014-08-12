@@ -26,7 +26,7 @@
       bottom: 10
 
     range =
-      x: d3.scale.linear().range([ box.width, 0]).domain([0, config.numOfPops])
+      x: d3.scale.linear().range([ box.width + icon.width, -icon.width]).domain([0, config.numOfPops])
       y: d3.scale.linear().range([ box.height, 0 ])
 
     svg = d3.select(el[0]).append('svg:svg')
@@ -44,7 +44,7 @@
           d.generation
         )
 
-      g.exit().transition().remove()
+      g.exit().transition().duration(config.tranDuration).delay(config.tranDelay).remove()
 
       gupdate = g.transition().duration(config.tranDuration).delay(config.tranDelay)
         .attr("transform", (d, i) ->
