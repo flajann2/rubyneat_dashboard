@@ -36,7 +36,6 @@
 
     popbox_update = (tick) ->
       data.unshift tick
-      console.log data
       g = svg.selectAll("g").data(data).enter().append("g")
         .attr("transform", (d) ->
           "translate(#{range.x(data.indexOf(d))}, #{0})"
@@ -47,9 +46,9 @@
         .attr("width", icon.width)
         .attr("height", icon.height)
       g.append("text").text( (d)->
-          d.generation
-        )
-        .attr("transform", "translate(#{icon.width / 2}, #{icon.height - icon.bottom}) rotate(-90)")
+          "Gen# #{d.generation}"
+        ).attr("transform",
+          "translate(#{icon.width / 2}, #{icon.height - icon.bottom}) rotate(-90)")
 
     update_brigade = (tick) ->
       popbox_update tick
