@@ -16,6 +16,8 @@
 
     config =
       numOfPops:    scope.numberOfPops || 10
+      tranDuration: 1
+      tranDelay:    1
 
     icon =
       uri:    "/images/population_sprite.050.png"
@@ -27,7 +29,7 @@
       x: d3.scale.linear().range([ box.width, 0]).domain([0, config.numOfPops])
       y: d3.scale.linear().range([ box.height, 0 ])
 
-    svg = d3.select(el[0]).append('svg')
+    svg = d3.select(el[0]).append('svg:svg')
       .attr('width', box.width).attr('height', box.height)
       .append('g')
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
@@ -36,19 +38,35 @@
 
     popbox_update = (tick) ->
       data.unshift tick
-      g = svg.selectAll("g").data(data).enter().append("g")
-        .attr("transform", (d) ->
-          "translate(#{range.x(data.indexOf(d))}, #{0})"
+      data.pop() if data.length > config.numOfPops
+
+      g = svg.selectAll("g").data(data, (d) ->
+          d.generation
         )
 
-      g.append("image")
+      g.exit().transition().remove()
+
+      gupdate = g.transition().duration(config.tranDuration).delay(config.tranDelay)
+        .attr("transform", (d, i) ->
+          "translate(#{range.x(i)}, #{0})"
+        )
+
+      genter = g.enter().append("g")
+        .attr("transform", (d, i) ->
+          "translate(#{range.x(i)}, #{0})"
+        )
+
+      genter.append("image")
         .attr("xlink:href", icon.uri)
         .attr("width", icon.width)
         .attr("height", icon.height)
-      g.append("text").text( (d)->
+
+      genter.append("text").text( (d)->
           "Gen# #{d.generation}"
-        ).attr("transform",
-          "translate(#{icon.width / 2}, #{icon.height - icon.bottom}) rotate(-90)")
+          ).attr("transform",
+            "translate(#{icon.width / 2}, #{icon.height - icon.bottom}) rotate(-90)"
+          )
+
 
     update_brigade = (tick) ->
       popbox_update tick
