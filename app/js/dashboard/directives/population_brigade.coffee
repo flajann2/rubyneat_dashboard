@@ -16,8 +16,8 @@
 
     config =
       numOfPops:    scope.numberOfPops || 10
-      tranDuration: 1
-      tranDelay:    1
+      tranDuration: 200
+      tranDelay:    200
 
     icon =
       uri:    "/images/population_sprite.050.png"
