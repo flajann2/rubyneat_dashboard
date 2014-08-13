@@ -3,3 +3,7 @@
     # code begin
     # code end
   restrict: "E"
+  scope:
+    width:         '='
+    height:        '='
+    popSource:     '='

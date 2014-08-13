@@ -23,8 +23,19 @@ module NEAT
     def dashboard(&block)
       Dashboard::dq ||= DashboardQueues.new
 
-      Dashboard::run_dashboard!
+      #FIXME: this is set too late in the game.
+      def port(portnum)
+        Dashboard::opts.port = portnum
+      end
+
+      #FIXME: this is set too late in the game.
+      def bind(bindaddr)
+        Dashboard::opts.bindaddr = bindaddr
+      end
+
       block.() if block_given?
+      Dashboard::run_dashboard!
+
       NEAT::controller.pre_exit_add do
         puts "Dashboard waiting for user to exit. Or you may do a ^C."
         Dashboard::join!

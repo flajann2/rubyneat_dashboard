@@ -8,6 +8,7 @@ require 'queue_ding'
 require_relative 'bower_dsl'
 require_relative 'overview_rest'
 require_relative 'rubyneat_dsl'
+require_relative 'rubyneat_api'
 require_relative 'stream_helpers'
 require_relative 'reporting'
 
@@ -35,6 +36,11 @@ module Dashboard
 
           app.get '/views/*' do |view|
             haml view.to_sym, layout: false
+          end
+
+          app.post '/json/*' do |path|
+            @params = params
+            rabl "/json/#{path}".to_sym, format: 'json'
           end
 
           # streaming population data
