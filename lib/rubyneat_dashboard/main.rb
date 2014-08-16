@@ -38,8 +38,10 @@ module Dashboard
             haml view.to_sym, layout: false
           end
 
-          app.post '/json/*' do |path|
+          app.get '/json/*' do |path|
             @params = params
+            @con = NEAT::controller
+            @pop = NEAT::controller.population
             rabl "/json/#{path}".to_sym, format: 'json'
           end
 
