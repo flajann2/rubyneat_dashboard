@@ -41,7 +41,7 @@ module Dashboard
           app.get '/json/*' do |path|
             @params = params
             @con = NEAT::controller
-            @pop = NEAT::controller.population
+            @pop = @con.population_complete(params['gen'].nil? ? nil : params['gen'].to_i)
             rabl "/json/#{path}".to_sym, format: 'json'
           end
 
@@ -51,10 +51,6 @@ module Dashboard
             stream(:keep_open) do |out|
               Thread.new do
                   loop {
-                    # FIXME: Currently if more than one browser attaches,
-                    # FIXME: the messages are split between them. We need
-                    # FIXME: more of a tee interface, which we can
-                    # FIXME: extend queue_ding to do automatically.
                     payload = wrap_for_sending payload: Dashboard.dq.population.next
                     out << payload
                   }
