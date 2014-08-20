@@ -16,9 +16,9 @@
     populationDrilldownService
       .getPopulation(genNum: 0
         , (resp) ->
-          console.log resp
+          scope.pop = resp.data.population
         , (resp) ->
-          console.log resp
+          scope.error = resp
       )
 
     svg = d3.select(el[0]).append('svg:svg')
