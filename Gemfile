@@ -22,4 +22,5 @@ group :development do
   gem "jeweler", "~> 2"
   gem "simplecov", ">= 0"
   gem 'semver', '~> 1'
+  gem 'therubyracer', '~> 0'
 end
