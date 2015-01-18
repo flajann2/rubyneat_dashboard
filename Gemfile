@@ -14,6 +14,7 @@ gem 'barista'
 gem 'eventmachine'
 gem 'queue_ding'
 gem 'rubyneat'
+
 group :development do
   gem "rspec", "~> 2"
   gem "yard", "~> 0"
@@ -23,4 +24,11 @@ group :development do
   gem "simplecov", ">= 0"
   gem 'semver', '~> 1'
   gem 'therubyracer', '~> 0'
+
+  gem 'pry'
+  gem 'pry-doc'
+  gem 'pry-byebug'
+  gem 'pry-remote'
+  gem 'pry-rescue'
+  gem 'pry-stack_explorer'
 end
