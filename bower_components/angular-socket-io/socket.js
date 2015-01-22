@@ -1,6 +1,6 @@
 /*
  * @license
- * angular-socket-io v0.6.0
+ * angular-socket-io v0.6.1
  * (c) 2014 Brian Ford http://briantford.com
  * License: MIT
  */
@@ -15,7 +15,7 @@ angular.module('btford.socket-io', []).
       ioSocket;
 
     // expose to provider
-    this.$get = function ($rootScope, $timeout) {
+    this.$get = ['$rootScope', '$timeout', function ($rootScope, $timeout) {
 
       var asyncAngularify = function (socket, callback) {
         return callback ? function () {
@@ -29,7 +29,7 @@ angular.module('btford.socket-io', []).
       return function socketFactory (options) {
         options = options || {};
         var socket = options.ioSocket || io.connect();
-        var prefix = options.prefix || defaultPrefix;
+        var prefix = options.prefix === undefined ? defaultPrefix : options.prefix ;
         var defaultScope = options.scope || $rootScope;
 
         var addListener = function (eventName, callback) {
@@ -81,8 +81,9 @@ angular.module('btford.socket-io', []).
             }
             events.forEach(function (eventName) {
               var prefixedEvent = prefix + eventName;
-              var forwardBroadcast = asyncAngularify(socket, function (data) {
-                scope.$broadcast(prefixedEvent, data);
+              var forwardBroadcast = asyncAngularify(socket, function () {
+                Array.prototype.unshift.call(arguments, prefixedEvent);
+                scope.$broadcast.apply(scope, arguments);
               });
               scope.$on('$destroy', function () {
                 socket.removeListener(eventName, forwardBroadcast);
@@ -94,5 +95,5 @@ angular.module('btford.socket-io', []).
 
         return wrappedSocket;
       };
-    };
+    }];
   });
