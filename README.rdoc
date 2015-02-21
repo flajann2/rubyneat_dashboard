@@ -1,5 +1,7 @@
 = RubyNEAT Dashboard
 
+{<img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/flajann2/rubyneat_dashboard">}[https://gitter.im/flajann2/rubyneat_dashboard?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge]
+
 This is a RubyNEAT Plugin to allow you to access RubyNEAT while running
 to see stats, etc.
 
