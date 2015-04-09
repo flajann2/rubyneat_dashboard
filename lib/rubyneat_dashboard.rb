@@ -20,7 +20,7 @@ module Dashboard
     end
 
     attr_neat :port, default: 3912
-    attr_neat :bindaddr, default: '0.0.0.0'
+    attr_neat :bindaddr, default: "0.0.0.0"
   end
 
   class << self

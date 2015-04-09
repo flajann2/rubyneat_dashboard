@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Fred Mitchell"]
-  s.date = "2015-01-25"
+  s.date = "2015-04-09"
   s.description = "\n  A web-based Dashboard for your RubyNEAT development,\n  http://localhost:3912\n  "
   s.email = "lordalveric@yahoo.com"
   s.extra_rdoc_files = [
@@ -128,10 +128,7 @@ Gem::Specification.new do |s|
     "bower_components/angular/bower.json",
     "bower_components/angular/package.json",
     "bower_components/animate.css/.bower.json",
-    "bower_components/animate.css/.editorconfig",
-    "bower_components/animate.css/.gitignore",
     "bower_components/animate.css/Gruntfile.js",
-    "bower_components/animate.css/README.md",
     "bower_components/animate.css/animate-config.json",
     "bower_components/animate.css/animate.css",
     "bower_components/animate.css/animate.min.css",
@@ -191,6 +188,14 @@ Gem::Specification.new do |s|
     "bower_components/animate.css/source/rotating_exits/rotateOutDownRight.css",
     "bower_components/animate.css/source/rotating_exits/rotateOutUpLeft.css",
     "bower_components/animate.css/source/rotating_exits/rotateOutUpRight.css",
+    "bower_components/animate.css/source/sliding_entrances/slideInDown.css",
+    "bower_components/animate.css/source/sliding_entrances/slideInLeft.css",
+    "bower_components/animate.css/source/sliding_entrances/slideInRight.css",
+    "bower_components/animate.css/source/sliding_entrances/slideInUp.css",
+    "bower_components/animate.css/source/sliding_exits/slideOutDown.css",
+    "bower_components/animate.css/source/sliding_exits/slideOutLeft.css",
+    "bower_components/animate.css/source/sliding_exits/slideOutRight.css",
+    "bower_components/animate.css/source/sliding_exits/slideOutUp.css",
     "bower_components/animate.css/source/specials/hinge.css",
     "bower_components/animate.css/source/specials/rollIn.css",
     "bower_components/animate.css/source/specials/rollOut.css",
@@ -205,12 +210,14 @@ Gem::Specification.new do |s|
     "bower_components/animate.css/source/zooming_exits/zoomOutRight.css",
     "bower_components/animate.css/source/zooming_exits/zoomOutUp.css",
     "bower_components/d3/.bower.json",
+    "bower_components/d3/.gitattributes",
     "bower_components/d3/CONTRIBUTING.md",
     "bower_components/d3/LICENSE",
     "bower_components/d3/README.md",
     "bower_components/d3/bower.json",
     "bower_components/d3/d3.js",
     "bower_components/d3/d3.min.js",
+    "bower_components/d3/package.js",
     "bower_components/fastclick/.bower.json",
     "bower_components/fastclick/LICENSE",
     "bower_components/fastclick/README.md",
@@ -309,7 +316,6 @@ Gem::Specification.new do |s|
     "bower_components/jquery-ui/themes/base/datepicker.css",
     "bower_components/jquery-ui/themes/base/dialog.css",
     "bower_components/jquery-ui/themes/base/draggable.css",
-    "bower_components/jquery-ui/themes/base/images/animated-overlay.gif",
     "bower_components/jquery-ui/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png",
     "bower_components/jquery-ui/themes/base/images/ui-bg_flat_75_ffffff_40x100.png",
     "bower_components/jquery-ui/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png",
@@ -320,9 +326,17 @@ Gem::Specification.new do |s|
     "bower_components/jquery-ui/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png",
     "bower_components/jquery-ui/themes/base/images/ui-icons_222222_256x240.png",
     "bower_components/jquery-ui/themes/base/images/ui-icons_2e83ff_256x240.png",
+    "bower_components/jquery-ui/themes/base/images/ui-icons_444444_256x240.png",
     "bower_components/jquery-ui/themes/base/images/ui-icons_454545_256x240.png",
+    "bower_components/jquery-ui/themes/base/images/ui-icons_555555_256x240.png",
+    "bower_components/jquery-ui/themes/base/images/ui-icons_777620_256x240.png",
+    "bower_components/jquery-ui/themes/base/images/ui-icons_777777_256x240.png",
     "bower_components/jquery-ui/themes/base/images/ui-icons_888888_256x240.png",
+    "bower_components/jquery-ui/themes/base/images/ui-icons_cc0000_256x240.png",
     "bower_components/jquery-ui/themes/base/images/ui-icons_cd0a0a_256x240.png",
+    "bower_components/jquery-ui/themes/base/images/ui-icons_ffffff_256x240.png",
+    "bower_components/jquery-ui/themes/base/jquery-ui.css",
+    "bower_components/jquery-ui/themes/base/jquery-ui.min.css",
     "bower_components/jquery-ui/themes/base/menu.css",
     "bower_components/jquery-ui/themes/base/progressbar.css",
     "bower_components/jquery-ui/themes/base/resizable.css",
@@ -1249,13 +1263,9 @@ Gem::Specification.new do |s|
     "bower_components/modernizr/test/qunit/qunit.js",
     "bower_components/modernizr/test/qunit/run-qunit.js",
     "bower_components/underscore/.bower.json",
-    "bower_components/underscore/.eslintrc",
-    "bower_components/underscore/.gitignore",
     "bower_components/underscore/LICENSE",
     "bower_components/underscore/README.md",
     "bower_components/underscore/bower.json",
-    "bower_components/underscore/component.json",
-    "bower_components/underscore/package.json",
     "bower_components/underscore/underscore-min.js",
     "bower_components/underscore/underscore-min.map",
     "bower_components/underscore/underscore.js",
@@ -1294,11 +1304,12 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<sinatra>, [">= 0"])
       s.add_runtime_dependency(%q<sinatra-assetpack>, [">= 0"])
       s.add_runtime_dependency(%q<sinatra-contrib>, [">= 0"])
-      s.add_runtime_dependency(%q<thin>, [">= 0"])
+      s.add_runtime_dependency(%q<thin>, ["~> 1.6"])
       s.add_runtime_dependency(%q<haml>, ["~> 4"])
       s.add_runtime_dependency(%q<sass>, ["~> 3"])
       s.add_runtime_dependency(%q<json>, ["~> 1"])
       s.add_runtime_dependency(%q<json-stream>, ["~> 0"])
+      s.add_runtime_dependency(%q<opal>, ["~> 0.7"])
       s.add_runtime_dependency(%q<rabl>, [">= 0"])
       s.add_runtime_dependency(%q<compass>, [">= 0"])
       s.add_runtime_dependency(%q<barista>, [">= 0"])
@@ -1323,11 +1334,12 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<sinatra>, [">= 0"])
       s.add_dependency(%q<sinatra-assetpack>, [">= 0"])
       s.add_dependency(%q<sinatra-contrib>, [">= 0"])
-      s.add_dependency(%q<thin>, [">= 0"])
+      s.add_dependency(%q<thin>, ["~> 1.6"])
       s.add_dependency(%q<haml>, ["~> 4"])
       s.add_dependency(%q<sass>, ["~> 3"])
       s.add_dependency(%q<json>, ["~> 1"])
       s.add_dependency(%q<json-stream>, ["~> 0"])
+      s.add_dependency(%q<opal>, ["~> 0.7"])
       s.add_dependency(%q<rabl>, [">= 0"])
       s.add_dependency(%q<compass>, [">= 0"])
       s.add_dependency(%q<barista>, [">= 0"])
@@ -1353,11 +1365,12 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<sinatra>, [">= 0"])
     s.add_dependency(%q<sinatra-assetpack>, [">= 0"])
     s.add_dependency(%q<sinatra-contrib>, [">= 0"])
-    s.add_dependency(%q<thin>, [">= 0"])
+    s.add_dependency(%q<thin>, ["~> 1.6"])
     s.add_dependency(%q<haml>, ["~> 4"])
     s.add_dependency(%q<sass>, ["~> 3"])
     s.add_dependency(%q<json>, ["~> 1"])
     s.add_dependency(%q<json-stream>, ["~> 0"])
+    s.add_dependency(%q<opal>, ["~> 0.7"])
     s.add_dependency(%q<rabl>, [">= 0"])
     s.add_dependency(%q<compass>, [">= 0"])
     s.add_dependency(%q<barista>, [">= 0"])

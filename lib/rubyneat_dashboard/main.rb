@@ -50,13 +50,14 @@ module Dashboard
           app.get '/population', provides: 'text/event-stream' do
             stream(:keep_open) do |out|
               Thread.new do
-                  loop {
-                    payload = wrap_for_sending payload: Dashboard.dq.population.next
-                    out << payload
-                  }
-                end
+                loop {
+                  payload = wrap_for_sending payload: Dashboard.dq.population.next
+                  out << payload
+                }
+              end
+              
               list << out
-              puts list.count
+              $log.debug "list count #{list.count}"
               out.callback {
                 puts 'closed'
                 list.delete(out)
