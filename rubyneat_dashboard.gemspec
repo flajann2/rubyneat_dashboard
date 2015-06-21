@@ -11,9 +11,9 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Fred Mitchell"]
-  s.date = "2015-04-09"
+  s.date = "2015-06-21"
   s.description = "\n  A web-based Dashboard for your RubyNEAT development,\n  http://localhost:3912\n  "
-  s.email = "lordalveric@yahoo.com"
+  s.email = "fred.mitchell@gmx.de"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     ".sass-cache/b114455b2c708d8ae00bfa5eb291284996faaf1c/class_methods.rbc",
     ".sass-cache/ebb0fda2e452b8e78b76a6d0f76937b12fe7a173/class_methods.rbc20140602-17212-2us5of",
     ".semver",
+    ".travis.yml",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
