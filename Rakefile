@@ -31,7 +31,7 @@ Jeweler::Tasks.new do |gem|
   http://localhost:3912
   }
 
-  gem.email = "lordalveric@yahoo.com"
+  gem.email = "fred.mitchell@gmx.de"
   gem.authors = ["Fred Mitchell"]
 
   gem.files.exclude 'foo/**/*', 'rdoc/*',
