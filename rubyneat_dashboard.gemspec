@@ -61,6 +61,7 @@ Gem::Specification.new do |s|
     "app/js/dashboard/directives/population_window.coffee",
     "app/js/dashboard/services/population_drilldown_service.coffee",
     "app/js/dashboard/services/population_service.coffee",
+    "bower.json",
     "bower_components/angular-animate.css/.bower.json",
     "bower_components/angular-animate.css/README.md",
     "bower_components/angular-animate.css/angular-animate.css",
@@ -127,6 +128,7 @@ Gem::Specification.new do |s|
     "bower_components/angular/angular.min.js.gzip",
     "bower_components/angular/angular.min.js.map",
     "bower_components/angular/bower.json",
+    "bower_components/angular/index.js",
     "bower_components/angular/package.json",
     "bower_components/animate.css/.bower.json",
     "bower_components/animate.css/Gruntfile.js",
@@ -138,6 +140,7 @@ Gem::Specification.new do |s|
     "bower_components/animate.css/source/_base.css",
     "bower_components/animate.css/source/attention_seekers/bounce.css",
     "bower_components/animate.css/source/attention_seekers/flash.css",
+    "bower_components/animate.css/source/attention_seekers/jello.css",
     "bower_components/animate.css/source/attention_seekers/pulse.css",
     "bower_components/animate.css/source/attention_seekers/rubberBand.css",
     "bower_components/animate.css/source/attention_seekers/shake.css",
@@ -1311,6 +1314,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<json>, ["~> 1"])
       s.add_runtime_dependency(%q<json-stream>, ["~> 0"])
       s.add_runtime_dependency(%q<opal>, ["~> 0.7"])
+      s.add_runtime_dependency(%q<opal-jquery>, ["~> 0"])
       s.add_runtime_dependency(%q<rabl>, [">= 0"])
       s.add_runtime_dependency(%q<compass>, [">= 0"])
       s.add_runtime_dependency(%q<barista>, [">= 0"])
@@ -1341,6 +1345,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<json>, ["~> 1"])
       s.add_dependency(%q<json-stream>, ["~> 0"])
       s.add_dependency(%q<opal>, ["~> 0.7"])
+      s.add_dependency(%q<opal-jquery>, ["~> 0"])
       s.add_dependency(%q<rabl>, [">= 0"])
       s.add_dependency(%q<compass>, [">= 0"])
       s.add_dependency(%q<barista>, [">= 0"])
@@ -1372,6 +1377,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<json>, ["~> 1"])
     s.add_dependency(%q<json-stream>, ["~> 0"])
     s.add_dependency(%q<opal>, ["~> 0.7"])
+    s.add_dependency(%q<opal-jquery>, ["~> 0"])
     s.add_dependency(%q<rabl>, [">= 0"])
     s.add_dependency(%q<compass>, [">= 0"])
     s.add_dependency(%q<barista>, [">= 0"])
