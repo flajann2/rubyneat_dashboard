@@ -3,7 +3,7 @@ source "https://rubygems.org"
 gem 'sinatra'#, '~> 1'
 gem 'sinatra-assetpack'
 gem 'sinatra-contrib'
-gem 'thin', '~> 1.6'
+gem 'thin', '~> 1'
 gem 'haml', '~> 4'
 gem 'sass', '~> 3'
 gem 'json', '~> 1'

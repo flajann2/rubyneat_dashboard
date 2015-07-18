@@ -1,6 +1,6 @@
 {
   "name": "angular-pusher",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "authors": [
     "brian.woodward@gmail.com"
   ],
@@ -27,11 +27,11 @@
   },
   "devDependencies": {},
   "homepage": "https://github.com/doowb/angular-pusher",
-  "_release": "0.0.13",
+  "_release": "0.0.14",
   "_resolution": {
     "type": "version",
-    "tag": "v0.0.13",
-    "commit": "928b582bdd670be5eed7411953df4686b2006f91"
+    "tag": "v0.0.14",
+    "commit": "9d7c2b33e49fc8bb79bfedb73ff307929030038e"
   },
   "_source": "git://github.com/doowb/angular-pusher.git",
   "_target": "~0.0.7",
