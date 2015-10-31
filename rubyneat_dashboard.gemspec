@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Fred Mitchell"]
-  s.date = "2015-07-18"
+  s.date = "2015-10-31"
   s.description = "\n  A web-based Dashboard for your RubyNEAT development,\n  http://localhost:3912\n  "
   s.email = "fred.mitchell@gmx.de"
   s.extra_rdoc_files = [
@@ -1298,7 +1298,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://rubyneat.com"
   s.licenses = ["MIT"]
   s.required_ruby_version = Gem::Requirement.new(">= 2.0")
-  s.rubygems_version = "2.4.5"
+  s.rubygems_version = "2.4.5.1"
   s.summary = "RubyNEAT Dashboard"
 
   if s.respond_to? :specification_version then
