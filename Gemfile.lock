@@ -212,8 +212,8 @@ PLATFORMS
 DEPENDENCIES
   barista
   bundler (~> 1)
-  compass
-  eventmachine
+  compass (~> 1)
+  eventmachine (~> 1)
   haml (~> 4)
   jeweler (~> 2)
   json (~> 1)
@@ -227,16 +227,16 @@ DEPENDENCIES
   pry-rescue
   pry-stack_explorer
   queue_ding
-  rabl
+  rabl (~> 0)
   rdoc (~> 3)
   rspec (~> 2)
   rubyneat
   sass (~> 3)
   semver (~> 1)
   simplecov
-  sinatra
-  sinatra-assetpack
-  sinatra-contrib
+  sinatra (~> 1)
+  sinatra-assetpack (~> 0)
+  sinatra-contrib (~> 1)
   therubyracer (~> 0)
   thin (~> 1)
   yard (~> 0)

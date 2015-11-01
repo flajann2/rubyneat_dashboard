@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
-gem 'sinatra'#, '~> 1'
-gem 'sinatra-assetpack'
-gem 'sinatra-contrib'
+gem 'sinatra', '~> 1'
+gem 'sinatra-assetpack', '~> 0'
+gem 'sinatra-contrib', '~> 1'
 gem 'thin', '~> 1'
 gem 'haml', '~> 4'
 gem 'sass', '~> 3'
@@ -10,12 +10,14 @@ gem 'json', '~> 1'
 gem 'json-stream', '~> 0'
 gem 'opal', '~> 0.7'
 gem 'opal-jquery', '~> 0'
-gem 'rabl'
-gem 'compass'
+gem 'rabl', '~> 0'
+gem 'compass', '~> 1'
 gem 'barista'
-gem 'eventmachine'
+gem 'eventmachine', '~> 1'
 gem 'queue_ding'
 gem 'rubyneat'
+gem 'therubyracer', '~> 0'
+
 
 group :development do
   gem "rspec", "~> 2"
@@ -25,7 +27,6 @@ group :development do
   gem "jeweler", "~> 2"
   gem "simplecov", ">= 0"
   gem 'semver', '~> 1'
-  gem 'therubyracer', '~> 0'
 
   gem 'pry'
   gem 'pry-doc'
