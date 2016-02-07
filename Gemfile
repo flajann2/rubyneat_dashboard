@@ -15,7 +15,9 @@ gem 'compass', '~> 1'
 gem 'barista'
 gem 'eventmachine', '~> 1'
 gem 'queue_ding'
-gem 'rubyneat'
+#gem 'rubyneat'
+gem 'rubyneat', github: '/development/ruby_proj/rubyneat', branch: 'hyper'
+
 gem 'therubyracer', '~> 0'
 
 
