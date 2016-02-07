@@ -69,7 +69,10 @@ GEM
     hike (1.2.3)
     i18n (0.7.0)
     interception (0.5)
-    jeweler (2.0.1)
+    jsmin (1.0.1)
+    json (1.8.3)
+    json-stream (0.2.1)
+    juwelier (2.1.0)
       builder
       bundler (>= 1.0)
       git (>= 1.2.5)
@@ -78,9 +81,6 @@ GEM
       nokogiri (>= 1.5.10)
       rake
       rdoc
-    jsmin (1.0.1)
-    json (1.8.3)
-    json-stream (0.2.1)
     jwt (1.5.1)
     libv8 (3.16.14.13)
     method_source (0.8.2)
@@ -214,9 +214,9 @@ DEPENDENCIES
   compass (~> 1)
   eventmachine (~> 1)
   haml (~> 4)
-  jeweler (~> 2)
   json (~> 1)
   json-stream (~> 0)
+  juwelier (~> 2)
   opal (~> 0.7)
   opal-jquery (~> 0)
   pry

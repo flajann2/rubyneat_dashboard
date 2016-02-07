@@ -24,7 +24,7 @@ group :development do
   gem "yard", "~> 0"
   gem "rdoc", "~> 3"
   gem "bundler", "~> 1"
-  gem "jeweler", "~> 2"
+  gem "juwelier", "~> 2"
   gem "simplecov", ">= 0"
   gem 'semver', '~> 1'
 
